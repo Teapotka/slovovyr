@@ -1,7 +1,7 @@
-[:ukraine:](#слововир)
-[:us:](#slovovyr)
+[:ukraine:](#link-ua)
+[:us:](#link-us)
 
-# СЛОВОВИР :milky_way:
+# <a name="link-ua">СЛОВОВИР</a> :milky_way:
 
 ### Мова завжди на часі.
 
@@ -24,7 +24,7 @@
 Сухарєв Тимофій - веброзробник ([LinkedIn](https://www.linkedin.com/in/tymofii-sukhariev-9630a2244/), [CV](https://my-cv-app.netlify.app/)) <br/>
 Тодорчук Владислав - UI/UX розробник ([Behance](https://www.behance.net/thomasstafford))
 
-# SLOVOVYR :milky_way:
+# <a name="link-us">SLOVOVYR</a> :milky_way:
 
 ### Language is always relevant.
 Since the language issue has become quite acute at the moment, we decided to create an online application to enrich the lexicon of Ukrainians with original words from different regions of Ukraine.
