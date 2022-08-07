@@ -11,11 +11,15 @@
 ---
 
 ### <a name='start-ua'>Старт</a>
-1) Відкрийте термінал
-2) Склонуйте репозиторій командою `git clone https://github.com/Teapotka/slovovyr.git`
+1) Зробіть "виделку" проєкту в GitHub
+2) Склонуйте репозиторій командою `git clone https://github.com/Ваш_Нікнейм/slovovyr.git`
 3) Введіть команду `npm install` або `yarn install`
 4) Запустіть локальний сервер командою `npm run dev`
-5) Готово! :tada:
+5) Зробіть свою гілку - `git checkout -b feature`
+6) Внесіть зміни в код
+7) Відправте коригування в репозиторій командою `git push -u origin feature`
+8) Відправте PR згідно з [шаблоном](#template-ua)
+9) Готово! :tada:
 
 ---
 
@@ -23,7 +27,9 @@
 Тут будуть розміщуватися завдання з плином часу. 
 | Завдання    |  Виконано  |
 | ----------- |   :----:   |
-| -           | -          |
+|Пристосувати vyr.svg<br/>та logo.svg до розмірів<br/>(мінімум 320х500) екрану.|:x:|
+|Оптимізувати стилі.|:x:|
+|Зробити функцію зміни теми<br/>(світла/темна).|:x:|
 
 ---
 
@@ -77,11 +83,15 @@ describe('/*суть тесту*/', () => {
 ---
 
 ### <a name='start-us'>Start</a>
-1) Open terminal
-2) Clone the repository with the `git clone command https://github.com/Teapotka/slovovyr.git`
-3) Type `npm install` or `yarn install`
-4) Start the local server with the `npm run dev` command
-5) Done! :tada:
+1) Make a "fork" of the project in GitHub
+2) Clone the repository with the command `git clone https://github.com/Your_Nickname/slovovyr.git'
+3) Enter `npm install` or `yarn install` command
+4) Start the local server with `npm run dev` command
+5) Make your branch - `git checkout -b feature`
+6) Make changes to the code
+7) Push the tweaks to the repository with `git push -u origin feature` command
+8) Send PR according to [template](#template-us)
+9) Done! :tada:
 
 ---
 
@@ -90,7 +100,9 @@ Tasks will be posted here over time.
 
 | Task        |  Completed |
 | ----------- |   :----:   |
-| -           | -          |
+|Adapt vyr.svg and logo.svg<br/> to size screen(minimum 320x500).|:x:|
+|Optimize styles.|:x:|
+|Make a theme change feature<br/>(light/dark).|:x:|
 
 ---
 
@@ -103,8 +115,7 @@ describe('/*the essence of the test*/', () => {
     }
 })
 ```
-:page_with_curl: [Docs](https://jestjs.io/docs/getting-started)<br/>
-Place the tests in the same folder as the component.
+:page_with_curl: [Docs](https://jestjs.io/docs/getting-started)<br/>Place the tests in the same folder as the component.
 
 ---
 
@@ -114,17 +125,14 @@ Place the tests in the same folder as the component.
     + The essence of the problem
     + Topicality
     + Occurrence conditions
-2) Process<br/>
-The process of emergence is described step by step:
+2) Process<br/>The process of emergence is described step by step:
     1) User deletes data
     2) A modal window appears
     3) The user cancels the action
     4) Data is deleted
-3) Possible fix<br/>
-Any ideas and guesses you have
+3) Possible fix<br/>Any ideas and guesses you have
 #### Pull
-1) Title <br/>
-What is fixed:
+1) Title <br/>What is fixed:
 "Fix header alignment"
 2) Context:
     + What was the problem?

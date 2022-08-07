@@ -8,7 +8,7 @@
 Оскільки наразі мовне питання постало досить гостро, ми вирішили створити онлайн застосунок, щоб збагагати лексикон українців споконвічними словами з різних регіонів України.
 
 ### Про проєкт
-
+**За основу був взятий сайт [Wordle](https://wordlegame.org/), ми НЕ привласнюємо собі ідею та елементи дизайну.** 
 В цьому проєкті використовується фреймворк Next.js для розробки клієнстської та серверної частин і допоміжні бібліотеки: TypeScript, ... (доповнюється). 
 
 ### Структура
@@ -39,5 +39,5 @@ This project uses the Next.js framework for the development of client and server
 + /styles - project styles
 + /public - public data
 ### About us
-Tymofiy Sukharev - web developer ([LinkedIn](https://www.linkedin.com/in/tymofii-sukhariev-9630a2244/), [CV](https://my-cv-app.netlify.app/)) <br/>
-Todorchuk Vladyslav - UI/UX developer ([Behance](https://www.behance.net/thomasstafford))
+Tymofii Sukhariev - web developer ([LinkedIn](https://www.linkedin.com/in/tymofii-sukhariev-9630a2244/), [CV](https://my-cv-app.netlify.app/)) <br/>
+Vladyslav Todorchuk - UI/UX developer ([Behance](https://www.behance.net/thomasstafford))

@@ -1,0 +1,19 @@
+/* outer ring selector  */
+.vyr svg *:first-child{
+    transform-origin: center;
+    animation: spinCW 20s infinite linear;
+}
+/* inner ring selector */
+.vyr svg *:last-child{
+    transform-origin: center;
+    animation: spinCW 15s infinite linear;
+}
+/* clockwise spin animation */
+@keyframes spinCW {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

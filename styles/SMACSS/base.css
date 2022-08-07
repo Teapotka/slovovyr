@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'KyivRegion';
+    src: url('../../fonts/KyivRegion-Regular.ttf');
+}
+*{    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'KyivRegion';
+}
+body{
+    color: #404040;
+    background-color: #ffffff;
+}

@@ -1,0 +1,19 @@
+/* global rules */
+.dark{
+    background-color: #404040;
+    color: #ffffff;
+}
+/* elemets with stroke and fill */
+.dark .logo path,
+.dark .vyr path{
+    stroke: #ffffff;
+    fill: #ffffff;
+}
+/* elemets with fill */
+.dark .icon path{
+    fill: #ffffff;
+}
+/* elemets with border */
+.dark .button{
+    border-color: #ffffff;
+}

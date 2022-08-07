@@ -1,11 +1,15 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Landing from '../components/Content/Landing/Landing'
+import Grid from '../components/Grid/Grid'
+import Header from '../components/Header/Header'
 
 const Home: NextPage = () => {
   return (
    <>
+   <Grid>
+      <Header/>
+      <Landing/>
+    </Grid>
    </>
   )
 }

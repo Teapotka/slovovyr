@@ -1,0 +1,20 @@
+.l-grid{ /* grid for content */
+    display: grid;
+    grid-template-rows: 50px calc(100vh - 50px);
+    align-items: center;
+    justify-content: flex-end;
+}
+.l-header{ /* grid for header */
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 70vw 30vw;
+}
+.l-content{  /* grid for content */
+    display: grid;
+    height: 100%;
+    width: 100vw;
+    grid-template-rows: 50% 15% 25%;
+    align-items: center;
+    justify-content: center;
+}
