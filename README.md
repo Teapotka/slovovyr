@@ -32,6 +32,11 @@ Since the language issue has become quite acute at the moment, we decided to cre
 ### About
 This project uses the Next.js framework for the development of client and server parts and auxiliary libraries: TypeScript, React Transition Group, Classnames, Redux Toolkit ... (to be added).
 
+---
+
+**The [Wordle](https://wordlegame.org/) site was taken as a basis, we do NOT appropriate the idea and design elements.**
+This project uses the Next.js framework for the development of client and server parts and auxiliary libraries: TypeScript, ... (to be added).
+
 ### Structure
 + /pages - project pages and api
 + /components - page components
