@@ -12,3 +12,5 @@ body{
     color: #404040;
     background-color: #ffffff;
 }
+svg {    pointer-events: none;}
+path{    pointer-events: auto;}

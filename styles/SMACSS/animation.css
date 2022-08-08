@@ -1,19 +1,76 @@
 /* outer ring selector  */
-.vyr svg *:first-child{
+.vyr svg *:first-child {
     transform-origin: center;
     animation: spinCW 20s infinite linear;
 }
 /* inner ring selector */
-.vyr svg *:last-child{
+.vyr svg *:last-child {
     transform-origin: center;
     animation: spinCW 15s infinite linear;
 }
 /* clockwise spin animation */
 @keyframes spinCW {
-    from{
+    from {
         transform: rotate(0deg);
     }
-    to{
+
+    to {
         transform: rotate(360deg);
     }
 }
+
+.content-enter {
+    /* transition: all 2s;
+    background-color: red;
+    grid-template-rows: 50% 15% 25%; */
+    /* grid-template-rows: 20% 55% 25%; */
+}
+
+.content-enter {
+    transition: 1s;
+    opacity: 0;
+    transform: scale(0)
+}
+.content-enter-done {
+    transition: 1s;
+}
+.content-enter .vyr {
+    /* background-color: #fff; */
+     /* transition: all 2s;
+    transform: translateY(-100vh);  */
+}
+.content-enter .logo {
+    /* grid-row: 1/3; */
+    /* background-color: #fff; */
+     /* transition: all 2s; */
+    /* transform: translateY(-100%);  */
+}
+.content-enter .logo {
+    /* grid-row: 1/3; */
+    /* background-color: #fff; */
+     /* transition: all 2s;
+    transform: translateY(-650%);  */
+}
+.content-enter-done .logo {
+    /* background-color: #fff; */
+    /* transition: all 2s; */
+    /* transform: none; */
+    /* transform: translateY(-40%); */
+    /* grid-template-rows: 20% 55% 25%; */
+    align-self: center;
+    max-width: 200px;
+}
+.content-enter-done{
+     /* background-color: red; */
+    grid-template-rows: 20% 55% 25%;  
+    
+}
+/* .content-enter-active {
+
+}
+.content-exit {
+
+}
+.content-exit-active {
+
+} */

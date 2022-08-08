@@ -3,6 +3,7 @@
     grid-template-rows: 50px calc(100vh - 50px);
     align-items: center;
     justify-content: flex-end;
+    overflow: hidden;
 }
 .l-header{ /* grid for header */
     width: 100vw;
@@ -14,6 +15,7 @@
     display: grid;
     height: 100%;
     width: 100vw;
+    grid-template-columns: 1fr;
     grid-template-rows: 50% 15% 25%;
     align-items: center;
     justify-content: center;

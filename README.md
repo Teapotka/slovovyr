@@ -5,11 +5,11 @@
 
 ### Мова завжди на часі.
 
-Оскільки наразі мовне питання постало досить гостро, ми вирішили створити онлайн застосунок, щоб збагагати лексикон українців споконвічними словами з різних регіонів України.
+Оскільки наразі мовне питання постало досить гостро, ми вирішили створити онлайн застосунок, щоб збагатити лексикон українців споконвічними словами з різних регіонів України.
 
 ### Про проєкт
 **За основу був взятий сайт [Wordle](https://wordlegame.org/), ми НЕ привласнюємо собі ідею та елементи дизайну.** 
-В цьому проєкті використовується фреймворк Next.js для розробки клієнстської та серверної частин і допоміжні бібліотеки: TypeScript, ... (доповнюється). 
+В цьому проєкті використовується фреймворк Next.js для розробки клієнстської та серверної частин і допоміжні бібліотеки: TypeScript, React Transition Group, Classnames, Redux Toolkit ... (доповнюється). 
 
 ### Структура
 
@@ -30,7 +30,7 @@
 Since the language issue has become quite acute at the moment, we decided to create an online application to enrich the lexicon of Ukrainians with original words from different regions of Ukraine.
 
 ### About
-This project uses the Next.js framework for the development of client and server parts and auxiliary libraries: TypeScript, ... (to be added).
+This project uses the Next.js framework for the development of client and server parts and auxiliary libraries: TypeScript, React Transition Group, Classnames, Redux Toolkit ... (to be added).
 
 ### Structure
 + /pages - project pages and api

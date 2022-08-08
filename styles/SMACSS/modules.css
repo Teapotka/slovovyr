@@ -35,6 +35,19 @@
     align-items: center;
     max-width: 300px;
     width: 90vw;
+    /* grid-row: 3/4; */
+}
+.map{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    width: 80vw;
+    /* opacity: 0; */
+    /* height: 0; */
+    /* grid-row: 2/4; */
 }
 
 .button { /*button element*/
@@ -48,4 +61,5 @@
     align-items: center;
     justify-self: center;
     align-self: center;
+    /* grid-row: 4/4; */
 }

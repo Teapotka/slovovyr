@@ -11,7 +11,7 @@
 ---
 
 ### <a name='start-ua'>Старт</a>
-1) Зробіть "виделку" проєкту в GitHub
+1) Зробіть fork проєкту в GitHub
 2) Склонуйте репозиторій командою `git clone https://github.com/Ваш_Нікнейм/slovovyr.git`
 3) Введіть команду `npm install` або `yarn install`
 4) Запустіть локальний сервер командою `npm run dev`
@@ -30,6 +30,7 @@
 |Пристосувати vyr.svg<br/>та logo.svg до розмірів<br/>(мінімум 320х500) екрану.|:x:|
 |Оптимізувати стилі.|:x:|
 |Зробити функцію зміни теми<br/>(світла/темна).|:x:|
+|Рефакторинг функції toggle<br/>(components/Content/Landing/<br/>Map.tsx). Бажано використати<br/>state.css та classnames.|:x:|
 
 ---
 
@@ -103,6 +104,7 @@ Tasks will be posted here over time.
 |Adapt vyr.svg and logo.svg<br/> to size screen(minimum 320x500).|:x:|
 |Optimize styles.|:x:|
 |Make a theme change feature<br/>(light/dark).|:x:|
+|Refactoring of the toggle function<br/>(components/Content/Landing/<br/>Map.tsx). It is recommended to use<br/>state.css and classnames.|:x:|
 
 ---
 
