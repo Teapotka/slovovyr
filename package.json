@@ -6,14 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest --watch"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.3",
     "@svgr/webpack": "^6.3.1",
+    "@types/axios": "^0.14.0",
+    "@types/cheerio": "^0.22.31",
     "@types/classnames": "^2.3.1",
     "@types/react-redux": "^7.1.24",
     "@types/react-transition-group": "^4.4.5",
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.12",
     "classnames": "^2.3.1",
     "next": "12.2.4",
     "react": "18.2.0",

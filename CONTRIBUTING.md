@@ -5,7 +5,6 @@
 ### Навігація
 + [Старт](#start-ua)
 + [Завдання](#task-ua)
-+ [Тестування](#test-ua)
 + [Шаблони](#template-ua)
 
 ---
@@ -30,21 +29,7 @@
 |Пристосувати vyr.svg<br/>та logo.svg до розмірів<br/>(мінімум 320х500) екрану.|:x:|
 |Оптимізувати стилі.|:x:|
 |Зробити функцію зміни теми<br/>(світла/темна).|:x:|
-|Рефакторинг функції toggle<br/>(components/Content/Landing/<br/>Map.tsx). Бажано використати<br/>state.css та classnames.|:x:|
-
----
-
-### <a name='test-ua'>Тестування</a>
-Намагайтесь писати тести там, де це можливо.<br/> Структура: 
-```
-describe('/*суть тесту*/', () => {
-    test('should /*перевірка фунціоналу*/'){
-        /*тестування*/
-    }
-})
-```
-:page_with_curl: [Документація](https://jestjs.io/docs/getting-started)<br/>
-Розміщуйте тести в одній папці разом з компонентою.
+|~~Рефакторинг функції toggle<br/>(components/Content/Landing/<br/>Map.tsx). Бажано використати<br/>state.css та classnames.~~|:heavy_check_mark:|
 
 ---
 
@@ -54,23 +39,19 @@ describe('/*суть тесту*/', () => {
     + Суть проблеми
     + Актуальність
     + Умови виникнення
-2) Процес <br/>
-Поетапно розписаний процес виникнення:
+2) Процес <br/>Поетапно розписаний процес виникнення:
    1) Користувач видаляє дані
    2) З'являється модальне вікно
    3) Користувач скасовує дію
    4) Дані видаляються
-3) Можливе виправлення <br/>
-Ваші будь-які ідеї та здогадки
+3) Можливе виправлення <br/>Ваші будь-які ідеї та здогадки
 #### Pull
-1) Заголовок <br/>
-Що виправлено:
+1) Заголовок <br/>Що виправлено:
 "Fix header aligment"
 2) Контекст:
     + В чому була проблема
     + Які додаткові бібліотеки ви використали
     + Яких методологій або практик ви дотримувалися
-    + Чому ви вирішили не робити тести (Якщо не зробили) 
 
 # <a name='us'>Project contribution</a>
 :yellow_heart:First of all, thank you in advance for your time and work:blue_heart:
@@ -78,7 +59,6 @@ describe('/*суть тесту*/', () => {
 ### Navigation
 + [Start](#start-us)
 + [Task](#task-us)
-+ [Testing](#test-us)
 + [Templates](#template-us)
 
 ---
@@ -104,20 +84,7 @@ Tasks will be posted here over time.
 |Adapt vyr.svg and logo.svg<br/> to size screen(minimum 320x500).|:x:|
 |Optimize styles.|:x:|
 |Make a theme change feature<br/>(light/dark).|:x:|
-|Refactoring of the toggle function<br/>(components/Content/Landing/<br/>Map.tsx). It is recommended to use<br/>state.css and classnames.|:x:|
-
----
-
-### <a name='test-us'>Testing</a>
-Try to write tests wherever possible.<br/>Structure:
-```
-describe('/*the essence of the test*/', () => {
-    test('should /*functionality check*/'){
-        /*testing*/
-    }
-})
-```
-:page_with_curl: [Docs](https://jestjs.io/docs/getting-started)<br/>Place the tests in the same folder as the component.
+|~~Refactoring of the toggle function<br/>(components/Content/Landing/<br/>Map.tsx). It is recommended to use<br/>state.css and classnames.~~|:heavy_check_mark:|
 
 ---
 
@@ -140,4 +107,3 @@ describe('/*the essence of the test*/', () => {
     + What was the problem?
     + What additional libraries did you use?
     + What methodologies or practices did you follow?
-    + Why did you decide not to take the tests (If not)

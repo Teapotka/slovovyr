@@ -1,3 +1,10 @@
 .is-inactive{
     border-color: #808080;
+    color: #808080;
+}
+.is-chosen{
+    fill: #404040
+}
+.is-not-chosen{
+    fill: #ffffff;
 }
