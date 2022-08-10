@@ -63,3 +63,48 @@
     align-self: center;
     /* grid-row: 4/4; */
 }
+.back-arrow{
+    display: flex;
+    justify-self: flex-start;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+.setting-icons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.setting-icon{
+    padding-right: 10px;
+}
+.game-area{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 3fr 2fr;
+    align-items: center;
+    justify-content: center;
+}
+.field{
+    display: grid;
+    grid-template-columns: repeat(5, 40px);
+    grid-template-rows: repeat(6, 40px);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 3px;
+}
+.field-item{
+    width: 100%;
+    height: 100%;
+    border: #404040 solid 1px;
+    border-radius: 5px;
+}
+.keyboard{
+    display: grid;
+    grid-template-columns: repeat(12, 25px);
+    grid-template-rows: repeat(3, 57px);
+    align-items: center;
+    justify-content: center;
+}

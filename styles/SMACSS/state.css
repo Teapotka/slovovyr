@@ -8,3 +8,11 @@
 .is-not-chosen{
     fill: #ffffff;
 }
+.is-game{
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.is-small{
+    max-width: 100px;
+    align-self: center;
+    width: 100%;
+}

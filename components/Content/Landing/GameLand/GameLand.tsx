@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
-import VyrSVG from '../../../../assets/vyr.svg'
-import LogoSVG from '../../../../assets/logo.svg'
+import VyrSVG from '../../../../assets/Vyr'
+import LogoSVG from '../../../../assets/Logo'
 
 const GameLand:FC<{startGame: ()=> void}> = ({startGame}) => {
   return (
@@ -11,7 +11,7 @@ const GameLand:FC<{startGame: ()=> void}> = ({startGame}) => {
   <div className='logo'>
     <LogoSVG />
   </div>
-  <div className='button' onClick={startGame}>
+  <div className='button' data-testid='button' onClick={startGame}>
   розпочати гру
 </div></>
   )

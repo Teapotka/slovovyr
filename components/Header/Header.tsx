@@ -1,5 +1,5 @@
 import React from 'react'
-import SettingSVG from '../../assets/settings.svg'
+import SettingSVG from '../../assets/Settings'
 
 const Header = () => {
   return (

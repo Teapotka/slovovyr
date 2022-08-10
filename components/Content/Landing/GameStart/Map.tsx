@@ -11,18 +11,12 @@ const UaMap = () => {
     const region = useSelector((state: RootState) => state.regions)
     console.log(region.region, region.choise)
     const toggle = (id:''|'east'|'west'|'center') =>{
-
-        // document.querySelectorAll('#uaMap path').forEach((el)=>{
-        //     el.setAttribute('fill', '#ffffff')
-        // })
-
-        // document.getElementById(id)!.setAttribute('fill', '#404040')
         dispatch(change(id))
     }
     console.log(region.region, region.choise)
 
     return (
-        <svg width="100%" id='uaMap' viewBox="0 0 394 262" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="100%" data-testid='mapSVG' id='uaMap' viewBox="0 0 394 262" fill="none" xmlns="http://www.w3.org/2000/svg">
             <East handler={toggle} />
             <West handler={toggle} />
             <Center handler={toggle} />

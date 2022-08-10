@@ -5,6 +5,7 @@
 ### Навігація
 + [Старт](#start-ua)
 + [Завдання](#task-ua)
++ [Тестування](#test-ua)
 + [Шаблони](#template-ua)
 
 ---
@@ -30,6 +31,22 @@
 |Оптимізувати стилі.|:x:|
 |Зробити функцію зміни теми<br/>(світла/темна).|:x:|
 |~~Рефакторинг функції toggle<br/>(components/Content/Landing/<br/>Map.tsx). Бажано використати<br/>state.css та classnames.~~|:heavy_check_mark:|
+|Видалити console.log()|:x:|
+|Реалізувати запис інформації в кеш|:x:|
+
+---
+
+### <a name='test-ua'>Тестування</a>
+Намагайтесь писати тести там, де це можливо.<br/> Структура: 
+```
+describe('/*Назва компоненту*/', () => {
+    test('should /*перевірка фунціоналу*/'){
+        /*тестування*/
+    }
+})
+```
+:page_with_curl: [Документація](https://jestjs.io/docs/getting-started)<br/>
+Розміщуйте тести в одній папці разом з компонентою.
 
 ---
 
@@ -59,6 +76,7 @@
 ### Navigation
 + [Start](#start-us)
 + [Task](#task-us)
++ [Testing](#test-us)
 + [Templates](#template-us)
 
 ---
@@ -85,6 +103,21 @@ Tasks will be posted here over time.
 |Optimize styles.|:x:|
 |Make a theme change feature<br/>(light/dark).|:x:|
 |~~Refactoring of the toggle function<br/>(components/Content/Landing/<br/>Map.tsx). It is recommended to use<br/>state.css and classnames.~~|:heavy_check_mark:|
+|Delete console.log()|:x:|
+|Implement the recording of information in the cache|:x:|
+
+---
+
+### <a name='test-us'>Testing</a>
+Try to write tests wherever possible.<br/>Structure:
+```
+describe('/*Component name*/', () => {
+    test('should /*functionality check*/'){
+        /*testing*/
+    }
+})
+```
+:page_with_curl: [Docs](https://jestjs.io/docs/getting-started)<br/>Place the tests in the same folder as the component.
 
 ---
 

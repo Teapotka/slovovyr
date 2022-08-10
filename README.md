@@ -14,10 +14,13 @@
 ### Структура
 
 + /pages - сторінки та апі проєкту
+    + /api - апі словника української мови 
 + /components - компоненти сторінки
 + /fonts - шрифт проєкту
 + /styles - стилі проєкту
 + /public - публічні дані
++ /assets - React Components як svg  
++ /store - сховище Redux Toolkit 
 
 ### Про нас
 
@@ -39,10 +42,14 @@ This project uses the Next.js framework for the development of client and server
 
 ### Structure
 + /pages - project pages and api
+    + /api - api of the dictionary of the Ukrainian language
 + /components - page components
 + /fonts - project font
 + /styles - project styles
 + /public - public data
++ /assets - React Components as svg  
++ /store - Redux Toolkit store
+
 ### About us
 Tymofii Sukhariev - web developer ([LinkedIn](https://www.linkedin.com/in/tymofii-sukhariev-9630a2244/), [CV](https://my-cv-app.netlify.app/)) <br/>
 Vladyslav Todorchuk - UI/UX developer ([Behance](https://www.behance.net/thomasstafford))
