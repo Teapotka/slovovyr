@@ -1,8 +1,11 @@
 import React from 'react'
+import TimerItem from '../../../../assets/TimerItem'
 
 const Timer = () => {
   return (
-    <div>Timer</div>
+    <div className='timer'>
+      <TimerItem/>
+    </div>
   )
 }
 

@@ -33,6 +33,7 @@
 |~~Рефакторинг функції toggle<br/>(components/Content/Landing/<br/>Map.tsx). Бажано використати<br/>state.css та classnames.~~|:heavy_check_mark:|
 |Видалити console.log()|:x:|
 |Реалізувати запис інформації в кеш|:x:|
+|Вдосконалити API|:x:|
 
 ---
 
@@ -105,6 +106,7 @@ Tasks will be posted here over time.
 |~~Refactoring of the toggle function<br/>(components/Content/Landing/<br/>Map.tsx). It is recommended to use<br/>state.css and classnames.~~|:heavy_check_mark:|
 |Delete console.log()|:x:|
 |Implement the recording of information in the cache|:x:|
+|Improve API|:x:|
 
 ---
 

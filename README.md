@@ -9,7 +9,7 @@
 
 ### Про проєкт
 **За основу був взятий сайт [Wordle](https://wordlegame.org/), ми НЕ привласнюємо собі ідею та елементи дизайну.** 
-В цьому проєкті використовується фреймворк Next.js для розробки клієнстської та серверної частин і допоміжні бібліотеки: TypeScript, React Transition Group, Classnames, Redux Toolkit ... (доповнюється). 
+В цьому проєкті використовується фреймворк Next.js для розробки клієнстської та серверної частин і допоміжні бібліотеки: TypeScript, React Transition Group, Classnames, Redux Toolkit, Jest, Cheerio, Axios, Next Cors, Anime.js ... (доповнюється). 
 
 ### Структура
 
@@ -17,7 +17,7 @@
     + /api - апі словника української мови 
 + /components - компоненти сторінки
 + /fonts - шрифт проєкту
-+ /styles - стилі проєкту
++ /styles - стилі проєкту (SMACSS)
 + /public - публічні дані
 + /assets - React Components як svg  
 + /store - сховище Redux Toolkit 
@@ -38,14 +38,14 @@ This project uses the Next.js framework for the development of client and server
 ---
 
 **The [Wordle](https://wordlegame.org/) site was taken as a basis, we do NOT appropriate the idea and design elements.**
-This project uses the Next.js framework for the development of client and server parts and auxiliary libraries: TypeScript, ... (to be added).
+This project uses the Next.js framework for the development of client and server parts and auxiliary libraries: TypeScript, React Transition Group, Classnames, Redux Toolkit, Jest, Cheerio, Axios, Next Cors, Anime.js ...(to be added).
 
 ### Structure
 + /pages - project pages and api
     + /api - api of the dictionary of the Ukrainian language
 + /components - page components
 + /fonts - project font
-+ /styles - project styles
++ /styles - project styles (SMACSS)
 + /public - public data
 + /assets - React Components as svg  
 + /store - Redux Toolkit store

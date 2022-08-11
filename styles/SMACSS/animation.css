@@ -1,8 +1,3 @@
-/* outer ring selector  */
-/* .vyr svg *:first-child {
-    transform-origin: center;
-    animation: spinCW 20s infinite linear;
-} */
 .vyr svg g{
     transform-origin: center;
 }
@@ -21,11 +16,6 @@
 .vyr svg g:nth-child(5) {
     animation: spinCW 8s infinite linear;
 }
-/* inner ring selector */
-/* .vyr svg *:last-child {
-    transform-origin: center;
-    animation: spinCW 15s infinite linear;
-} */
 /* clockwise spin animation */
 @keyframes spinCW {
     from {
@@ -36,7 +26,7 @@
         transform: rotate(360deg);
     }
 }
-
+/* React transition group */
 .content-enter {
     /* transition: all 2s;
     background-color: red;
@@ -83,12 +73,3 @@
     grid-template-rows: 20% 55% 25%;  
     
 }
-/* .content-enter-active {
-
-}
-.content-exit {
-
-}
-.content-exit-active {
-
-} */
