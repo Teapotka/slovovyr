@@ -10,6 +10,10 @@ const nextConfig = {
   },
   reactStrictMode: false,
   swcMinify: true,
+  env:{
+    API_KEY: process.env.API_KEY,
+    SECRET_API_KEY: process.env.SECRET_API_KEY,
+  },
   eslint: {
     // Warning: This allows production builds to successfully complete even if
     // your project has ESLint errors.

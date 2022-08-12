@@ -46,13 +46,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       length = html.length
 
       if (length == 0)
-        return { exsisting: false }
+        return { existing: false }
 
       if (index >= length)
         return 'out of range'
 
       return {
-        exsisting: true,
+        existing: true,
         count: length,
         word: {
           index: index,
