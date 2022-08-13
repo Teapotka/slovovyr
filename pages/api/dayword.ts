@@ -1,9 +1,11 @@
 import { NextApiRequest, NextApiResponse } from "next/types";
+import words from "../../data/words";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'POST'){
-        // console.log(JSON.parse(req.body))
-        //return data
-        res.json({word: 'замок'})
+        let dw = words
+        .filter(w => w.region == req.body.region)
+        [0].words[new Date().getDate() - 1]
+        res.json(dw)
     }
 }
