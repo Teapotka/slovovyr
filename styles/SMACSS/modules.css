@@ -7,6 +7,54 @@
     justify-self: center;
     align-self: center;
 }
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+}
+.settings-modal{
+    display: grid;
+    grid-template-rows: 20% 80%;
+    width: 250px;
+    height: 150px;
+    border: 1px #404040 solid;
+    border-radius: 10px;
+}
+.header-modal{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.cross-modal{
+    justify-self: flex-end;
+    align-self: flex-start;
+    padding: 10px;
+}
+.label-modal{
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: center;
+}
+.content-modal{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.text-modal{
+    align-self: center;
+    padding-left: 10px;
+}
+.switch-modal{
+    align-self: center;
+    justify-self: flex-end;
+    padding-right: 10px;
+}
 
 .icon { /*settings icon*/
     width: 100%;
@@ -49,7 +97,6 @@
     /* height: 0; */
     /* grid-row: 2/4; */
 }
-
 .button { /*button element*/
     display: flex;
     width: 250px;
@@ -110,7 +157,7 @@
     height: 100%;
     border: #404040 solid 2px;
     border-radius: 5px;
-font-size: 30px;
+    font-size: 30px;
     align-items: center;
     justify-content: center;
 }

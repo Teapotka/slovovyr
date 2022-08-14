@@ -1,4 +1,5 @@
 import axios from "axios"
+import { CHOISE_KEY, getData } from "../../../../data/localMemory"
 
 export default function Enter() {
     const items = document.querySelectorAll('.field-item')
@@ -13,7 +14,8 @@ export default function Enter() {
         filtered.forEach((value) => {
             value.classList.add('is-fetching')
         })
-        axios.post(`${process.env.SECRET_API_KEY}`, { region: 'center' })
+        console.log(CHOISE_KEY)
+        axios.post(`${process.env.SECRET_API_KEY}`, { region: getData(CHOISE_KEY) })
             .then((d) => {
                 let answer = d.data.word
                 if (answer == word) {
@@ -30,7 +32,7 @@ export default function Enter() {
                             })
                             if (d.data.existing) {
                                 let answer = ''
-                                axios.post(`${process.env.SECRET_API_KEY}`, { region: 'center' })
+                                axios.post(`${process.env.SECRET_API_KEY}`, { region: getData(CHOISE_KEY) })
                                     .then((d) => {
                                         answer = d.data.word
                                         console.log(answer)

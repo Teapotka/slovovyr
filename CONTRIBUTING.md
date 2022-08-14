@@ -32,9 +32,12 @@
 |Зробити функцію зміни теми<br/>(світла/темна).|:x:|
 |~~Рефакторинг функції toggle<br/>(components/Content/Landing/<br/>Map.tsx). Бажано використати<br/>state.css та classnames.~~|:heavy_check_mark:|
 |Видалити console.log()|:x:|
-|Реалізувати запис інформації в localstorage|:x:|
+|~~Реалізувати запис інформації в localstorage~~|:x:|
 |Вдосконалити API|:x:|
 |Оптимізувати алгоритм внесення/очищення/підтвердження (components/Game/Field/)|:x:|
+|таймер до нового слова|:x:|
+|пауза гри та виграш/програш|:x:|
+|затримка api більше 3сек - відміна|:x:|
 
 ---
 
@@ -106,7 +109,7 @@ Tasks will be posted here over time.
 |Make a theme change feature<br/>(light/dark).|:x:|
 |~~Refactoring of the toggle function<br/>(components/Content/Landing/<br/>Map.tsx). It is recommended to use<br/>state.css and classnames.~~|:heavy_check_mark:|
 |Delete console.log()|:x:|
-|Implement the recording of information in the localstorage|:x:|
+|~~Implement the recording of information in the localstorage~~|:x:|
 |Improve API|:x:|
 |Optimize input/clear/submit algorithms(components/Game/Field/)|:x:|
 ---

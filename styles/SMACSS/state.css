@@ -16,6 +16,7 @@
     align-self: center;
     width: 100%;
 }
+.is-hidden{display: none;}
 .is-wrong{border-color: #808080 ;}
 .is-right{border-color: #02FF0C ;}
 .is-semiright{border-color: #FFD600;}

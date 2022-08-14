@@ -3,14 +3,15 @@ import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '../../../../store/index'
 import { change } from '../../../../store/mapSlice'
 import Center from './Center'
-import East from './East'
 import West from './West'
+import East from './East'
 
 const UaMap = () => {
     const dispatch = useDispatch()
     const region = useSelector((state: RootState) => state.regions)
     console.log(region.region, region.choise)
     const toggle = (id:''|'east'|'west'|'center') =>{
+        console.log('id: '+id)
         dispatch(change(id))
     }
     console.log(region.region, region.choise)

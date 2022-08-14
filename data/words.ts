@@ -1,7 +1,7 @@
 export default
 [
     {
-        region: 'east',
+        region: 'west',
         words: [
             { word: 'луфко', meaning: 'олівець' },
             { word: 'ґралі', meaning: 'вила' },
@@ -43,7 +43,7 @@ export default
         ]
     },
     {
-        region: 'west',
+        region: 'east',
         words: [
             { word: 'комиш', meaning: 'очерет' },
             { word: 'клуня', meaning: 'будівля для снопів' },
