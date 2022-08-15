@@ -1,23 +1,57 @@
-import React from 'react'
+import anime from 'animejs'
+import { useRouter } from 'next/router'
+import React, { useEffect, useState } from 'react'
+import { useDispatch } from 'react-redux'
 import Arrow from '../../assets/Arrow'
 import Info from '../../assets/Info'
 import Logo from '../../assets/Logo'
 import SettingsSVG from '../../assets/Settings'
+import { toggle } from '../../store/modalSlice'
 
 const HeaderGame = () => {
+  const [animation, setanimation] = useState<any>(null)
+  const dispatch = useDispatch()
+  const router = useRouter()
+  useEffect(()=>{
+  setanimation(
+      anime.timeline({
+      duration: 15 * 1000,
+      easing: "linear",
+  })) 
+  },[])
+  useEffect(()=>{
+    animation != null && animation.add({
+      targets: '#timer',
+      strokeDashoffset: [0, anime.setDashoffset],
+      stroke: ['#404040', '#FF0000']
+    })
+    animation != null && animation.finished.then(()=>dispatch(toggle('lose')))
+  },[animation])
+  const handle = (key: 'settings' | 'info') =>{
+    if(animation != null){
+      animation.paused == false && animation.pause()
+      dispatch(toggle(key))
+    }
+  }
+  const playanim = () =>{
+    console.log('logo click')
+    if(animation != null){
+      animation.paused ? animation.play() : animation.pause()  
+    }
+  }
   return (
     <div className="l-header is-game">
-      <div className="back-arrow">
+      <div className="back-arrow" onClick={()=>router.push('/')}>
         <Arrow/>
       </div>
-      <div className="logo is-small">
+      <div className="logo is-small" id='logo' onClick={playanim}>
         <Logo/>
       </div>
       <div className="setting-icons">
-        <div className="setting-icon">
+        <div className="setting-icon" onClick={()=>handle('info')}>
         <Info/>
         </div>
-        <div className="setting-icon">
+        <div className="setting-icon" id='settings' onClick={()=>handle('settings')}>
         <SettingsSVG/>
         </div>
       </div>

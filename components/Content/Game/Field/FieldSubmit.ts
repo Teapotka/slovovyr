@@ -1,11 +1,12 @@
 import axios from "axios"
 import { CHOISE_KEY, getData } from "../../../../data/localMemory"
 
-export default function Enter() {
+export default async function Enter(func: Function) {
     const items = document.querySelectorAll('.field-item')
     const filtered = Array.from(items).filter(i => i.classList.length == 1).filter(f => f.innerHTML != '')
+    let result: null | boolean = null
     if (filtered.length == 5) {
-
+        const end = gameEnd(items)
         let word = ''
         filtered.forEach((val) => {
             word += val.innerHTML
@@ -18,11 +19,21 @@ export default function Enter() {
         axios.post(`${process.env.SECRET_API_KEY}`, { region: getData(CHOISE_KEY) })
             .then((d) => {
                 let answer = d.data.word
+                if(end){
+                    filtered.forEach((value) => {
+                        value.classList.remove('is-fetching')
+                    })
+                    validate(word, answer, filtered)
+                    answer == word ? result = true : result = false
+                    return null
+                }
                 if (answer == word) {
                     filtered.forEach((value) => {
                         value.classList.remove('is-fetching')
                     })
                     validate(word, answer, filtered)
+                    result = true
+                    return null
                 }
                 else {
                     axios.get(`${process.env.API_KEY}` + word)
@@ -46,6 +57,8 @@ export default function Enter() {
                             }
                         })
                 }
+            }).then(()=>{
+                result != null && func(result)
             })
 
     }
@@ -108,4 +121,10 @@ function matchLetters(word: string, answer: string) {
     array = clone
     console.log(array)
     return array
+}
+function gameEnd(items: NodeListOf<Element>){
+    if(Array.from(items).filter(i => i.innerHTML == '').length == 0)
+        return true
+    else
+        return false
 }

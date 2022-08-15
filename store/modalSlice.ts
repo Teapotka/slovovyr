@@ -2,10 +2,10 @@ import { Action, createSlice } from "@reduxjs/toolkit";
 
 type TAction = {
     type: string
-    payload: 'none' | 'settings' 
+    payload: 'none' | 'settings' | 'info'| 'win' | 'lose'
 }
 type TInitial = {
-    modal: 'none' | 'settings'
+    modal: 'none' | 'settings' | 'info' | 'win' | 'lose'
 }
 const modalSlice = createSlice({
     name: 'modal',
@@ -14,7 +14,8 @@ const modalSlice = createSlice({
     } as TInitial,
     reducers: {
         toggle(state, action:TAction){
-            console.log('toggle')
+            state.modal = action.payload
+            console.log(action.payload)
         }
     }
 })

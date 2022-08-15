@@ -27,24 +27,110 @@
     border: 1px #404040 solid;
     border-radius: 10px;
 }
+.info-modal{
+    display: grid;
+    grid-template-rows: 12% 80%;
+    width: 250px;
+    height: 450px;
+    border: 1px #404040 solid;
+    border-radius: 10px;
+}
+.win-modal{
+    display: grid;
+    grid-template-rows: 20% 80%;
+    width: 250px;
+    height: 130px;
+    border: 1px #02FF0C solid;
+    border-radius: 10px;
+}
+.lose-modal{
+    display: grid;
+    grid-template-rows: 20% 80%;
+    width: 250px;
+    height: 130px;
+    border: 1px #FD8383 solid;
+    border-radius: 10px;
+}
 .header-modal{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
 }
 .cross-modal{
+    justify-content: flex-end;
+    align-items: flex-start;
     justify-self: flex-end;
     align-self: flex-start;
+    display: flex;
     padding: 10px;
+    width: 100%;
+    height: 100%;
 }
 .label-modal{
     grid-column: 2/3;
     justify-self: center;
     align-self: center;
 }
-.content-modal{
+.settings-content-modal{
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
+}
+.info-content-modal{
+    display: grid;
+    grid-template-rows: 2fr 2fr 3fr;
+}
+.win-content-modal{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.word-modal{
+    padding: 10px;
+    justify-self: center;
+    align-self: flex-end;
+    padding-bottom: 10px;
+}
+.def-modal{
+    padding-top: 10px;
+    justify-self: center;
+    align-self: flex-start;
+}
+.intro-modal{
+    font-size: 9px;
+    text-align: center;
+}
+.field-modal{
+    margin-top: 18px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.field-item-modal{
+    margin: 0 1.5px;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: #404040 solid 2px;
+    border-radius: 5px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.rules-modal{
+    padding-top: 18px;
+}
+.row-modal{
+    padding: 0 10px 8px 10px;
+    display: flex;
+    align-items: center;
+}
+.comment-modal{
+    margin-left: 5px;
+    font-size: 10px;
+}
+.example-modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .text-modal{
     align-self: center;

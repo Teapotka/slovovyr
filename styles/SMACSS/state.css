@@ -2,6 +2,9 @@
     border-color: #808080;
     color: #808080;
 }
+.is-inactiveSVG svg *{
+    stroke: #808080;
+}
 .is-chosen{
     fill: #404040
 }
@@ -15,6 +18,15 @@
     max-width: 100px;
     align-self: center;
     width: 100%;
+}
+.is-mini{
+    width: 22px;
+    height: 22px;
+    font-size: 13px;
+}
+.is-example{
+    margin: 0;
+    text-align: center;
 }
 .is-hidden{display: none;}
 .is-wrong{border-color: #808080 ;}
