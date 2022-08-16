@@ -1,13 +1,16 @@
 import React from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import Cross from '../../assets/Cross'
+import { RootState } from '../../store'
 import { toggle } from '../../store/modalSlice'
 
 const InfoModal = () => {
     const dispatch = useDispatch()
+    const controllers = useSelector((state: RootState) => state.animations)
     const close = () => {
       console.log('before click')
-      document.getElementById('logo')!.click() 
+    //   document.getElementById('logo')!.click() 
+    controllers.play()
       dispatch(toggle('none'))   
     }
     return (
@@ -22,11 +25,11 @@ const InfoModal = () => {
             і колір букв зміниться, щоб показати, наскільки ви близькі.<br/><br/>
             Щоб почати гру, просто введіть будь-яке слово, наприклад:
             <div className='field-modal'>
-                <div className='field-item-modal'>з</div>
+                <div className='field-item-modal is-wrong'>з</div>
                 <div className='field-item-modal is-right'>е</div>
-                <div className='field-item-modal'>м</div>
+                <div className='field-item-modal is-wrong'>м</div>
                 <div className='field-item-modal is-semiright'>л</div>
-                <div className='field-item-modal'>я</div>
+                <div className='field-item-modal is-wrong'>я</div>
             </div>
             </div>
             <div className='rules-modal'>
@@ -47,19 +50,19 @@ const InfoModal = () => {
             </div>
             <div className='example-modal'>
             <div className='field-modal is-example'>
-                <div className='field-item-modal'>з</div>
+                <div className='field-item-modal is-right'>л</div>
                 <div className='field-item-modal is-right'>е</div>
-                <div className='field-item-modal'>м</div>
-                <div className='field-item-modal is-semiright'>л</div>
-                <div className='field-item-modal'>я</div>
+                <div className='field-item-modal is-wrong'>м</div>
+                <div className='field-item-modal is-wrong'>і</div>
+                <div className='field-item-modal is-wrong'>ш</div>
             </div>
             <div className='comment-modal is-example'>майже</div>
             <div className='field-modal is-example'>
-                <div className='field-item-modal'>з</div>
+                <div className='field-item-modal is-right'>л</div>
                 <div className='field-item-modal is-right'>е</div>
-                <div className='field-item-modal'>м</div>
-                <div className='field-item-modal is-semiright'>л</div>
-                <div className='field-item-modal'>я</div>
+                <div className='field-item-modal is-right'>н</div>
+                <div className='field-item-modal is-right'>ч</div>
+                <div className='field-item-modal is-right'>а</div>
             </div>
             <div className='comment-modal is-example'>перемога !</div>
             </div>

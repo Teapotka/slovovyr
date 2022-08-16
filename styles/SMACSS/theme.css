@@ -17,3 +17,56 @@
 .dark .button{
     border-color: #ffffff;
 }
+.dark .map path{
+    stroke: #ffffff;
+}
+.dark #settingsSVG path{
+    fill: #ffffff;
+}
+.dark #infoSVG *{
+stroke: #ffffff;
+}
+.dark .back-arrow path{
+    stroke: #ffffff;
+}
+.dark .keyboard-item{
+    border-color: #ffffff;
+}
+.dark .field-item{
+    border-color: #ffffff;
+}
+.dark .field-item-modal{
+    border-color: #ffffff;
+}
+.dark #enterSVG path{
+    fill: #ffffff;
+}
+.dark #backspaceSVG path{
+    fill: #ffffff;
+}
+.dark .modal{
+    background-color: rgba(64, 64, 64 , 0.9);
+}
+.dark .settings-modal{
+    border-color: #ffffff;
+}
+.dark .info-modal{
+    border-color: #ffffff;
+}
+.dark .switch-modal * {
+    stroke: #ffffff;
+}
+.dark #timer{
+    stroke: #ffffff;
+}
+.dark #crossSVG path{
+    stroke: #ffffff;
+}
+.dark .is-inactiveSVG{stroke: #808080;}
+.dark .is-chosen{fill: #ffffff;}
+.dark .is-not-chosen{fill: #404040;}
+.dark .is-wrong{border-color: #808080 ;}
+.dark .is-right{border-color: #02FF0C ;}
+.dark .is-semiright{border-color: #FFD600;}
+.color-blindness .is-right{border-color: #0057b8 ;}
+.color-blindness .is-semiright{border-color:  #ffd700;}

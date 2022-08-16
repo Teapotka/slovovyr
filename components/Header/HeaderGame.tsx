@@ -6,6 +6,7 @@ import Arrow from '../../assets/Arrow'
 import Info from '../../assets/Info'
 import Logo from '../../assets/Logo'
 import SettingsSVG from '../../assets/Settings'
+import { setFunctions } from '../../store/animationSlice'
 import { toggle } from '../../store/modalSlice'
 
 const HeaderGame = () => {
@@ -15,7 +16,7 @@ const HeaderGame = () => {
   useEffect(()=>{
   setanimation(
       anime.timeline({
-      duration: 15 * 1000,
+      duration: 3 *60 * 1000,
       easing: "linear",
   })) 
   },[])
@@ -23,9 +24,10 @@ const HeaderGame = () => {
     animation != null && animation.add({
       targets: '#timer',
       strokeDashoffset: [0, anime.setDashoffset],
-      stroke: ['#404040', '#FF0000']
+      // stroke: ['#404040', '#FF0000']
     })
     animation != null && animation.finished.then(()=>dispatch(toggle('lose')))
+    animation != null && dispatch(setFunctions({play: animation.play, pause: animation.pause}))  
   },[animation])
   const handle = (key: 'settings' | 'info') =>{
     if(animation != null){
@@ -33,18 +35,18 @@ const HeaderGame = () => {
       dispatch(toggle(key))
     }
   }
-  const playanim = () =>{
-    console.log('logo click')
-    if(animation != null){
-      animation.paused ? animation.play() : animation.pause()  
-    }
-  }
+  // const playanim = () =>{
+  //   console.log('logo click')
+  //   if(animation != null){
+  //     animation.paused ? animation.play() : animation.pause()
+  //   }
+  // }
   return (
     <div className="l-header is-game">
       <div className="back-arrow" onClick={()=>router.push('/')}>
         <Arrow/>
       </div>
-      <div className="logo is-small" id='logo' onClick={playanim}>
+      <div className="logo is-small" id='logo'>
         <Logo/>
       </div>
       <div className="setting-icons">

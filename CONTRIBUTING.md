@@ -5,6 +5,8 @@
 ### Навігація
 + [Старт](#start-ua)
 + [Завдання](#task-ua)
++ [Стилі](#style-ua)
++ [Структура](#stucture-ua)
 + [Тестування](#test-ua)
 + [Шаблони](#template-ua)
 
@@ -29,19 +31,56 @@
 | ----------- |   :----:   |
 |Пристосувати vyr.svg<br/>та logo.svg до розмірів<br/>(мінімум 320х500) екрану.|:x:|
 |Оптимізувати стилі.|:x:|
-|Зробити функцію зміни теми<br/>(світла/темна).|:x:|
+|~~Зробити функцію зміни теми<br/>(світла/темна/дальтонізм).~~|:heavy_check_mark:|
 |~~Рефакторинг функції toggle<br/>(components/Content/Landing/<br/>Map.tsx). Бажано використати<br/>state.css та classnames.~~|:heavy_check_mark:|
 |Видалити console.log()|:x:|
-|~~Реалізувати запис інформації в localstorage~~|:x:|
+|~~Реалізувати запис інформації в localstorage~~|:heavy_check_mark:|
 |Вдосконалити API|:x:|
 |Оптимізувати алгоритм внесення/очищення/підтвердження (components/Game/Field/)|:x:|
 |таймер до нового слова|:x:|
-|пауза гри та виграш/програш|:x:|
+|~~пауза гри та виграш/програш~~|:heavy_check_mark:|
 |затримка api більше 3сек - відміна|:x:|
 
 ---
 
+### <a name='style-ua'>Стилі</a>
+
+Ми використовуємо методологію SMACSS з доповненням (animation.css). При роботі з:
++ base.css - використовуйте селектори тегів (button, div, *)
++ layout.css - використовуйте селектори класів з префіксом l- (.l-header, .l-content)
++ modules.css - використовуйте селектори класів та запотреби псевдокласи (.keyboard div, .keyboard div:last-child)
++ state.css - використовуйте селектори класів з префіксом is- (.is-hidden, .is-wrong, .is-right)
++ theme.css - використовуйте селектори класів та дочірніх елементів (.dark .modal, .color-blindness .is-right)
++ animation.css - використовуйте будь-які селектори
+
+:page_with_curl: [Документація (EN)](http://smacss.com/book/)
+:page_with_curl: [Блог (RU)](https://medium.com/@companjero/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F-smacss-e601222cd4eb)
+
+Ідентифікатори використовуються для svg (з суфіксом SVG: vyrSVG, crossSVG) та специфічних елементів (клавіатура, мапа). В усіх інших випадках старайтеся уникати їх
+
+---
+
+### <a name='stucture-ua'>Структура</a>
+
+```mermaid
+graph TD;
+    Page-->Provider;
+    Provider-->Grid.tsx;
+    Grid.tsx-->ModalContainer.tsx;
+    Grid.tsx-->children;
+    children-->/Header;
+    /Header-- or-->Header.tsx;
+    /Header-- or-->HeaderGame.tsx;
+    children-->/Content;
+    /Content-- or--> Landing.tsx;
+    /Content-- or--> Game.tsx;
+
+```
+
+---
+
 ### <a name='test-ua'>Тестування</a>
+
 Намагайтесь писати тести там, де це можливо.<br/> Структура: 
 ```
 describe('/*Назва компоненту*/', () => {
@@ -75,12 +114,17 @@ describe('/*Назва компоненту*/', () => {
     + Які додаткові бібліотеки ви використали
     + Яких методологій або практик ви дотримувалися
 
+---
+---
+
 # <a name='us'>Project contribution</a>
 :yellow_heart:First of all, thank you in advance for your time and work:blue_heart:
 
 ### Navigation
 + [Start](#start-us)
 + [Task](#task-us)
++ [Style](#style-us)
++ [Структура](#stucture-ua)
 + [Testing](#test-us)
 + [Templates](#template-us)
 
@@ -106,12 +150,52 @@ Tasks will be posted here over time.
 | ----------- |   :----:   |
 |Adapt vyr.svg and logo.svg<br/> to size screen(minimum 320x500).|:x:|
 |Optimize styles.|:x:|
-|Make a theme change feature<br/>(light/dark).|:x:|
+|~~Make a theme change feature<br/>(light/dark/color-blindness).~~|:heavy_check_mark:|
 |~~Refactoring of the toggle function<br/>(components/Content/Landing/<br/>Map.tsx). It is recommended to use<br/>state.css and classnames.~~|:heavy_check_mark:|
 |Delete console.log()|:x:|
-|~~Implement the recording of information in the localstorage~~|:x:|
+|~~Implement the recording of information in the localstorage~~|:heavy_check_mark:|
 |Improve API|:x:|
 |Optimize input/clear/submit algorithms(components/Game/Field/)|:x:|
+|timer to new word|:x:|
+|~~game pause and win/loss~~|:heavy_check_mark:|
+|api delay more than 3 seconds - cancellation|:x:|
+
+---
+
+### <a name='style-us'>Styles</a>
+
+We use the SMACSS methodology with the addition (animation.css). When working with:
++ base.css - use tag selectors (button, div, *)
++ layout.css - use class selectors with the prefix l- (.l-header, .l-content)
++ modules.css - use class selectors and use pseudo-classes (.keyboard div, .keyboard div:last-child)
++ state.css - use class selectors with the prefix is- (.is-hidden, .is-wrong, .is-right)
++ theme.css - use selectors of classes and child elements (.dark .modal, .color-blindness .is-right)
++ animation.css - use any selectors
+
+:page_with_curl: [Docs (EN)](http://smacss.com/book/)
+:page_with_curl: [Blog (RU)](https://medium.com/@companjero/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F-smacss-e601222cd4eb)
+
+Identifiers are used for svg (with SVG suffix: vyrSVG, crossSVG) and individual elements (keyboard, map). In all other cases, try to avoid them
+
+---
+
+### <a name='stucture-us'>Stucture</a>
+
+```mermaid
+graph TD;
+    Page-->Provider;
+    Provider-->Grid.tsx;
+    Grid.tsx-->ModalContainer.tsx;
+    Grid.tsx-->children;
+    children-->/Header;
+    /Header-- or-->Header.tsx;
+    /Header-- or-->HeaderGame.tsx;
+    children-->/Content;
+    /Content-- or--> Landing.tsx;
+    /Content-- or--> Game.tsx;
+
+```
+
 ---
 
 ### <a name='test-us'>Testing</a>

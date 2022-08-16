@@ -20,7 +20,8 @@
 + /styles - стилі проєкту (SMACSS)
 + /public - публічні дані
 + /assets - React Components як svg  
-+ /store - сховище Redux Toolkit 
++ /store - сховище Redux Toolkit
++ /data - сховище слів та функції для роботи з localStorage 
 
 ### Про нас
 
@@ -49,6 +50,7 @@ This project uses the Next.js framework for the development of client and server
 + /public - public data
 + /assets - React Components as svg  
 + /store - Redux Toolkit store
++ /data - storage of words and functions for working with localStorage
 
 ### About us
 Tymofii Sukhariev - web developer ([LinkedIn](https://www.linkedin.com/in/tymofii-sukhariev-9630a2244/), [CV](https://my-cv-app.netlify.app/)) <br/>
