@@ -124,7 +124,7 @@ describe('/*Назва компоненту*/', () => {
 + [Start](#start-us)
 + [Task](#task-us)
 + [Style](#style-us)
-+ [Структура](#stucture-ua)
++ [Stucture](#stucture-us)
 + [Testing](#test-us)
 + [Templates](#template-us)
 

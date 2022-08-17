@@ -34,9 +34,6 @@
 Since the language issue has become quite acute at the moment, we decided to create an online application to enrich the lexicon of Ukrainians with original words from different regions of Ukraine.
 
 ### About
-This project uses the Next.js framework for the development of client and server parts and auxiliary libraries: TypeScript, React Transition Group, Classnames, Redux Toolkit ... (to be added).
-
----
 
 **The [Wordle](https://wordlegame.org/) site was taken as a basis, we do NOT appropriate the idea and design elements.**
 This project uses the Next.js framework for the development of client and server parts and auxiliary libraries: TypeScript, React Transition Group, Classnames, Redux Toolkit, Jest, Cheerio, Axios, Next Cors, Anime.js ...(to be added).
