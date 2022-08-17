@@ -23,6 +23,10 @@
 + /store - сховище Redux Toolkit
 + /data - сховище слів та функції для роботи з localStorage 
 
+### Хочете зробити внесок ?
+
+Ми з радістю підтримуємо будь-які внески до проєкту (ви можете ознайомитися з порадами і правилами в [CONTRIBUTION.md](https://github.com/Teapotka/slovovyr/blob/main/CONTRIBUTING.md)).
+
 ### Про нас
 
 Сухарєв Тимофій - веброзробник ([LinkedIn](https://www.linkedin.com/in/tymofii-sukhariev-9630a2244/), [CV](https://my-cv-app.netlify.app/)) <br/>
@@ -48,6 +52,9 @@ This project uses the Next.js framework for the development of client and server
 + /assets - React Components as svg  
 + /store - Redux Toolkit store
 + /data - storage of words and functions for working with localStorage
+
+### Want to make a contribution?
+We gladly support any contributions to the project (you can read the tips and rules at [CONTRIBUTION.md](https://github.com/Teapotka/slovovyr/blob/main/CONTRIBUTING.md)).
 
 ### About us
 Tymofii Sukhariev - web developer ([LinkedIn](https://www.linkedin.com/in/tymofii-sukhariev-9630a2244/), [CV](https://my-cv-app.netlify.app/)) <br/>

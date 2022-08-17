@@ -16,7 +16,7 @@ export function recordData(region: string, result: boolean){
     localStorage.setItem(key, record)
 }
 export function loadThemeData(){
-    getData(THEME_KEY)!.split(',').forEach(val=>{
+    getData(THEME_KEY)?.split(',').forEach(val=>{
        val && document.querySelector('body')?.classList.add(val)
     })
 }
