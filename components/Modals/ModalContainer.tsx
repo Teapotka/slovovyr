@@ -7,14 +7,19 @@ import LoseModal from './LoseModal'
 import SettingsModal from './SettingsModal'
 import WinModal from './WinModal'
 
-const ModalContainer = () => {
+const calculate = () =>{
+  const value = Math.trunc(+document.getElementById('timer')!.style.strokeDashoffset.slice(0, -2)*300/248.18588256835938)
+  console.log(value)
+  return value
+}
+const ModalContainer = () => {  
     const modal = useSelector((state:RootState)=> state.modals.modal)
     console.log(modal)
     const modals = {
         settings: <SettingsModal/>,
         info: <InfoModal/>,
-        win: <WinModal/>,
-        lose: <LoseModal/>,
+        win: <WinModal calculate={calculate}/>,
+        lose: <LoseModal calculate={calculate}/>,
         none: '',
     }
   return (

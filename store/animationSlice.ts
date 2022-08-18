@@ -7,6 +7,7 @@ type TAction = {
 type TInitial = {
     pause: any
     play: any
+    progress: any
 }
 const animationSlice = createSlice({
     name: 'animation',

@@ -19,6 +19,94 @@
     width: 100vw;
     height: 100vh;
 }
+.horizontal-line{
+    background-color: #404040;
+    display: flex;
+    width: 80%;
+    margin: 30px 10% 0 10%;
+    height: 1px;
+}
+.block-container{
+    overflow: scroll;
+    height: calc(100vh - 50px);
+}
+.history-grid{
+    padding-top: 30px;
+    display: grid;
+    grid-auto-rows: 30px;
+    overflow: scroll;
+    height: calc(100vh - 50px);
+    row-gap: 30px;
+}
+.horizontal-line-alt{
+    background-color: #404040;
+    display: flex;
+    width: 80%;
+    margin: 5px 10% 0 10%;
+    height: 1px;
+}
+.history-item{
+    height: 30px;
+}
+.history-row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+/* .history-row span {
+    display: flex;
+    height: auto;
+    align-items: flex-end;
+} */
+.block-api{
+    width: 80vw;
+    margin: 0 10vw;
+    display: grid;
+    row-gap: 30px;
+    text-align: center;
+}
+.block-ex{
+    width: 80vw;
+    margin: 0 10vw;
+    display: grid;
+    row-gap: 40px;
+}
+.block-content{
+    display: grid;
+    grid-row: 20% auto;
+    row-gap: 20px;
+    width: 80vw;
+    justify-content: center;
+    font-family: 'Source Code Pro';
+}
+.block-content:last-child{
+    padding-bottom: 20px;
+}
+.block-json{
+    display: flex;
+    width: 80vw;
+    word-break: break-all;
+}
+.block-link{
+    text-align: center;
+}
+.block-def{
+    text-align: center;
+}
+.block-header{
+    padding-top: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+.block-icon{
+    justify-self: center;
+}
+.block-box{
+    display: grid;
+    row-gap: 20px;
+    padding: 10px 0 30px 0;
+    font-family: 'KyivRegion';
+}
 .settings-modal{
     display: grid;
     grid-template-rows: 20% 80%;

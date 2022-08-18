@@ -1,13 +1,13 @@
 import axios from 'axios';
 import { useRouter } from 'next/router';
-import React, { useEffect, useState } from 'react'
+import React, { FC, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import Cross from '../../assets/Cross';
-import { CHOISE_KEY, getData } from '../../data/localMemory';
+import { CHOISE_KEY, getData, recordData } from '../../data/localMemory';
 import { RootState } from '../../store';
 import { toggle } from '../../store/modalSlice';
 
-const LoseModal = () => {
+const LoseModal:FC<{calculate: ()=>number}> = ({calculate}) => {
     const dispatch = useDispatch()
     const router = useRouter()
     const [word, setword] = useState({word: '', meaning: ''})
@@ -18,6 +18,8 @@ const LoseModal = () => {
 
     useEffect(() => {
         // document.getElementById('timer')!.remove()
+        // console.log(document.getElementById('timer')?.getAttribute('stroke-dasharray'))
+        recordData(calculate(), false)
         controllers.pause()
     }, []);
     const close = () => {

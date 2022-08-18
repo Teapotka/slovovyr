@@ -2,15 +2,48 @@
     font-family: 'KyivRegion';
     src: url('../../fonts/KyivRegion-Regular.ttf');
 }
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../../fonts/SourceCodePro-Medium.ttf');
+}
 *{    
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'KyivRegion';
+   
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+pre{
+    font-family: 'Source Code Pro';
+    font-size: 13px;
+    width: 80vw;
+    /* word-wrap: break-word; */
+    /* display: flex; */
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;    
+
+}
+a{
+    font-family: 'Source Code Pro';
+}
+::-webkit-scrollbar{
+    display: none; /* Hide scrollbar for Chrome, Safari and Opera */
 }
 body{
+    font-family: 'KyivRegion';
     color: #404040;
     background-color: #ffffff;
+}
+a:active,
+a:hover,
+a:visited,
+a{
+    color: #404040;
+    text-decoration: none;
 }
 svg {    pointer-events: none;}
 path{    pointer-events: auto;}

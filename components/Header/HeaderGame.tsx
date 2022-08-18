@@ -14,11 +14,12 @@ const HeaderGame = () => {
   const dispatch = useDispatch()
   const router = useRouter()
   useEffect(()=>{
+    //FIXME: animation start when header is in page
   setanimation(
       anime.timeline({
-      duration: 3 *60 * 1000,
+      duration: 5 * 60 * 1000,
       easing: "linear",
-  })) 
+  }))
   },[])
   useEffect(()=>{
     animation != null && animation.add({

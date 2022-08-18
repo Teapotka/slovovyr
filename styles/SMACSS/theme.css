@@ -62,6 +62,24 @@ stroke: #ffffff;
 .dark #crossSVG path{
     stroke: #ffffff;
 }
+.dark a {
+    color: #ffffff;
+}
+.dark .horizontal-line {
+    background-color: #ffffff;
+}
+.dark .horizontal-line-alt {
+    background-color: #ffffff;
+}
+.dark #linkSVG path{
+    stroke: #ffffff;
+}
+.dark #yesSVG path{
+    stroke: #ffffff;
+}
+.dark #noSVG path{
+    stroke: #ffffff;
+}
 .dark .is-inactiveSVG{stroke: #808080;}
 .dark .is-chosen{fill: #ffffff;}
 .dark .is-not-chosen{fill: #404040;}
