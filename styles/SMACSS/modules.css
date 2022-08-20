@@ -72,6 +72,9 @@
     row-gap: 40px;
 }
 .block-content{
+    border: #404040 1px solid;
+    padding: 15px 0;
+    border-radius: 5px;
     display: grid;
     grid-row: 20% auto;
     row-gap: 20px;
@@ -80,9 +83,11 @@
     font-family: 'Source Code Pro';
 }
 .block-content:last-child{
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
+    margin-bottom: 20px;
 }
 .block-json{
+    padding: 15px;
     display: flex;
     width: 80vw;
     word-break: break-all;
@@ -166,6 +171,9 @@
 .info-content-modal{
     display: grid;
     grid-template-rows: 2fr 2fr 3fr;
+}
+.info-word{
+    text-align: center;
 }
 .win-content-modal{
     display: grid;
@@ -265,7 +273,7 @@
     align-self: center;
     justify-content: center;
     align-items: center;
-    max-width: 600px;
+    max-width: 450px;
     width: 80vw;
     /* opacity: 0; */
     /* height: 0; */

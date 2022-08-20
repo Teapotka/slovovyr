@@ -20,7 +20,7 @@ const WinModal:FC<{calculate: ()=>number}> = ({calculate}) => {
         // document.getElementById('logo')!.click()
         // console.log(document.getElementById('timer')?.style.strokeDashoffset.slice(0, -2))
         recordData(calculate(), true)
-    readAllData()
+        readAllData()
         controllers.pause()
     }, []);
     const close = () => {

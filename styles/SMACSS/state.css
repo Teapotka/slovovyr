@@ -28,6 +28,7 @@
     margin: 0;
     text-align: center;
 }
+.is-hidden-mark{opacity: 0;}
 .is-hidden{display: none;}
 .is-wrong{border-color: #808080 ;}
 .is-right{border-color: #02FF0C ;}

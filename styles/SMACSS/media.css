@@ -1,0 +1,160 @@
+@media screen and (min-width: 320px) {
+    @media screen and (min-height: 600px) {
+        .timer svg{
+            height: 50px;
+        }
+        
+    }
+     @media screen and (min-height: 700px) {
+         .l-content{
+             grid-template-rows: 40% 15% 20%;
+            }
+        .content-enter-done{
+            grid-template-rows: 20% 40% 25% !important;            
+        }      
+        .field{
+            grid-template-columns: repeat(5, 45px);
+            grid-template-rows: repeat(6, 45px);
+        }
+    }
+    
+    @media screen and (min-height: 900px) {
+        .l-content{
+            grid-template-rows: 40% 15% 10%;
+        }
+        .timer svg{
+            height: 60px;
+        }
+        .content-enter-done{
+            grid-template-rows: 20% 30% 25% !important;            
+        }
+        .field{
+            grid-template-columns: repeat(5, 50px);
+            grid-template-rows: repeat(6, 50px);
+        }
+    }
+}
+@media screen and (min-width: 375px){
+    .modal .win-modal,
+    .modal .lose-modal,
+    .modal .info-modal,
+    .modal .settings-modal
+    {
+        transform: scale(1.2);
+    }
+    .keyboard{
+        grid-template-columns: repeat(12, 26px);
+        grid-template-rows: repeat(3, 55px);
+    }
+    @media screen and (min-height: 600px){
+        .field{
+            grid-template-columns: repeat(5, 45px);
+            grid-template-rows: repeat(6, 45px);
+        }  
+    }
+    @media screen and (min-height: 700px) {
+        .l-content{
+            grid-template-rows: 45% 15% 20%;
+           }
+       .content-enter-done{
+           grid-template-rows: 20% 40% 25% !important;            
+       }   
+       .field{
+        grid-template-columns: repeat(5, 50px);
+        grid-template-rows: repeat(6, 50px);
+    }   
+   }
+   @media screen and (min-height: 900px) {
+    .l-content{
+        grid-template-rows: 40% 15% 10%;
+    }
+    .content-enter-done{
+        grid-template-rows: 20% 30% 25% !important;            
+    }
+    .field{
+        grid-template-columns: repeat(5, 55px);
+        grid-template-rows: repeat(6, 55px);
+    }
+}
+   
+}
+@media screen and (min-width: 425px){
+    .button{
+        width: 300px;
+    height: 90px;
+    font-size: 35px;
+    }
+    .history-item{
+        font-size: 18px;
+    }
+    .keyboard{
+        grid-template-columns: repeat(12, 30px);
+        grid-template-rows: repeat(3, 56px);
+    }
+    .keyboard-item{
+        font-size: 20px;
+    }
+    .block-container{
+        font-size: 18px;
+    }
+    @media screen and (min-height: 700px) {
+        .field-item{
+            font-size: 35px;
+        }
+    }
+}
+@media screen and (min-width: 500px){
+    .modal .win-modal,
+    .modal .lose-modal,
+    .modal .info-modal,
+    .modal .settings-modal
+    {
+        transform: scale(1.4);
+    }
+    .content-enter-done {
+        grid-template-rows: 20% 55% 25% !important;
+    }
+    .intro-modal{
+        font-size: 11px;
+    }
+    .keyboard{
+        grid-template-columns: repeat(12, 35px);
+        grid-template-rows: repeat(3, 50px);
+    }
+    .l-header{
+        grid-template-columns: 50vw 50vw;
+        height: 70px;
+    }
+    .l-grid{
+        grid-template-rows: 70px calc(100vh - 70px);
+    }
+    .navigation{
+        font-size: 22px;
+    }
+    #settingsSVG{
+        width: 30px;
+        height: 30px;
+    }
+    #infoSVG{
+        width: 30px;
+        height: 30px;
+    }
+    #arrowSVG{
+        width: 30px;
+        height: 30px;
+    }
+    .is-small{
+        transform: scale(1.3);
+    }
+}
+@media screen and (min-width: 1000px){
+    .navigation{
+        font-size: 27px;
+    }
+    .history-row{
+        font-size: 22px;
+    }
+    .block-api{
+        font-size: 22px;
+    }
+}

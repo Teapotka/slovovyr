@@ -71,6 +71,9 @@ stroke: #ffffff;
 .dark .horizontal-line-alt {
     background-color: #ffffff;
 }
+.dark .block-content {
+    border-color: #ffffff;
+}
 .dark #linkSVG path{
     stroke: #ffffff;
 }
@@ -79,6 +82,18 @@ stroke: #ffffff;
 }
 .dark #noSVG path{
     stroke: #ffffff;
+}
+.dark #mark-center,
+.dark #mark-east,
+.dark #mark-west
+{
+    stroke: #02FF0C;
+}
+.dark #cross-center,
+.dark #cross-east,
+.dark #cross-west
+{
+    stroke: #FF0000;
 }
 .dark .is-inactiveSVG{stroke: #808080;}
 .dark .is-chosen{fill: #ffffff;}

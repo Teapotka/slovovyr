@@ -1,12 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '../../../../store/index'
 import { change } from '../../../../store/mapSlice'
 import Center from './Center'
 import West from './West'
 import East from './East'
+import { checkData } from '../../../../data/localMemory'
 
 const UaMap = () => {
+    useEffect(()=>{
+        if(checkData().length != 0){
+            const check = checkData()
+            check.forEach((val)=>{
+                document.getElementById(`${val.result ? 'mark' : 'cross'}-${val.region}`)?.classList.remove('is-hidden-mark')
+            })
+        }
+
+    },[])
     const dispatch = useDispatch()
     const region = useSelector((state: RootState) => state.regions)
     console.log(region.region, region.choise)

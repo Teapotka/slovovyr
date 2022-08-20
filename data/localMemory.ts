@@ -34,7 +34,7 @@ export function updateThemeData(){
     setData(THEME_KEY, theme)
 }
 export function recordData(time: any, result: boolean){    
-    if(getData(`${new Date().getDate()}.${new Date().getMonth()},${getData(CHOISE_KEY)}`)==null){
+    if(getData(`${new Date().getDate()},${new Date().getMonth()+1},${getData(CHOISE_KEY)}`)==null){
         let score = `${time},${result}`
         setData(`${new Date().getDate()},${new Date().getMonth()+1},${getData(CHOISE_KEY)}`, score)
     }
@@ -66,4 +66,21 @@ export function processData():
     console.log(info)
     //@ts-ignore
     return info.reverse()
+}
+export function checkData(){
+    const {data, keys} = readAllData()
+    let info = [{region: '', result: false}]
+    keys.forEach((val, i)=>{
+        const dateAndRegion = keys[i].split(',')
+        const timeAndResult = data[i].split(',')
+        if(+dateAndRegion[0] == new Date().getDate() && +dateAndRegion[1] == new Date().getMonth()+1 )
+        {            
+            info.push({
+                region: dateAndRegion[2],
+                result: timeAndResult[1] === 'true'
+            })
+        }
+    })
+    console.log(info.filter(c => c.region != ''))
+    return info.filter(c => c.region != '')
 }

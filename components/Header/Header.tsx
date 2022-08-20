@@ -14,7 +14,7 @@ const Header = () => {
     <div className="l-header">
       <div className="navigation">
         <div>про нас</div>
-        <div>історія</div>
+        <div onClick={()=>router.push('/history')}>історія</div>
         <div onClick={()=>router.push('/server')}>апі</div>
       </div>
       <div className="icon" onClick={()=>handle('settings')}>

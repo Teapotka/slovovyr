@@ -44,7 +44,7 @@ const HeaderGame = () => {
   // }
   return (
     <div className="l-header is-game">
-      <div className="back-arrow" onClick={()=>router.push('/')}>
+      <div className="back-arrow" onClick={()=>{ animation.pause() ;router.push('/')}}>
         <Arrow/>
       </div>
       <div className="logo is-small" id='logo'>

@@ -70,7 +70,7 @@
 }
 .content-enter-done{
      /* background-color: red; */
-    grid-template-rows: 20% 55% 25%;  
+    grid-template-rows: 20% 55% 25% !important;  
     
 }
 

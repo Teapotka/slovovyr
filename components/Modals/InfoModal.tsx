@@ -67,6 +67,7 @@ const InfoModal = () => {
             <div className='comment-modal is-example'>перемога !</div>
             </div>
             </div>
+            <div className='info-word'>Слова оновлюються щоденно</div>
           </div>
     )
 }

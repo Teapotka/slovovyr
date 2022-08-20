@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import React, { FC } from 'react'
+import React, { FC, useEffect, useRef } from 'react'
 import Map from './Map'
 import LogoSVG from '../../../../assets/Logo'
 import { useSelector } from 'react-redux'
