@@ -19,6 +19,76 @@
     width: 100vw;
     height: 100vh;
 }
+.temp-l-grid{
+    display: grid;
+    grid-template-rows: 50px calc(100vh - 50px);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.temp-l-header-landing{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns: minmax(150px, 300px) minmax(auto, 100vw);
+}
+.temp-l-navigation{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 20px;
+}
+.temp-l-icons{
+    display: flex;
+    justify-self: flex-end;
+    align-self: center;
+    padding: 0 10px;
+}
+.temp-l-icons div:nth-child(2){
+    margin-left: 10px;
+}
+.temp-l-header-game{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 25vw 50vw 25vw;
+}
+.temp-l-logo{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    max-width: 150px;
+    justify-self: center;
+    align-self:center ;
+}
+.temp-center-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.temp-l-header-alternative{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 25vw 50vw 25vw;
+}
+.temp-timer{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
 .horizontal-line{
     background-color: #404040;
     display: flex;

@@ -10,7 +10,7 @@ const InfoModal = () => {
     const close = () => {
       console.log('before click')
     //   document.getElementById('logo')!.click() 
-    controllers.play()
+    // controllers.play()
       dispatch(toggle('none'))   
     }
     return (

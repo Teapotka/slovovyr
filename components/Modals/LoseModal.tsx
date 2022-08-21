@@ -20,7 +20,6 @@ const LoseModal:FC<{calculate: ()=>number}> = ({calculate}) => {
         // document.getElementById('timer')!.remove()
         // console.log(document.getElementById('timer')?.getAttribute('stroke-dasharray'))
         recordData(calculate(), false)
-        controllers.pause()
     }, []);
     const close = () => {
         console.log('before click')

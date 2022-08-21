@@ -16,8 +16,8 @@ const SettingsModal = () => {
   },[])
   const close = () => {
     console.log('before click')
-    if (router.pathname == '/game')
-      controllers.play()
+    // if (router.pathname == '/game')
+    //   controllers.play()
     dispatch(toggle('none'))
   }
   const theme = (e: React.MouseEvent<HTMLDivElement>, theme: string) => {

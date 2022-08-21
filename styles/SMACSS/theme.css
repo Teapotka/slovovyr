@@ -23,7 +23,14 @@
 .dark #settingsSVG path{
     fill: #ffffff;
 }
+.dark #logoSVG path{
+    stroke: #ffffff;
+    fill: #ffffff;
+}
 .dark #infoSVG *{
+stroke: #ffffff;
+}
+.dark #arrowSVG *{
 stroke: #ffffff;
 }
 .dark .back-arrow path{

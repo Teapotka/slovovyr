@@ -2,10 +2,10 @@ import { Action, createSlice } from "@reduxjs/toolkit";
 
 type TAction = {
     type: string
-    payload: 'none' | 'settings' | 'info'| 'win' | 'lose'
+    payload: 'none' | 'settings' | 'info'| 'win' | 'lose' 
 }
 type TInitial = {
-    modal: 'none' | 'settings' | 'info' | 'win' | 'lose'
+    modal: 'none' | 'settings' | 'info' | 'win' | 'lose' 
 }
 const modalSlice = createSlice({
     name: 'modal',

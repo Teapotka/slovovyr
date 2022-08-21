@@ -9,6 +9,7 @@ const History = () => {
     console.log(processData())
     sethistory(processData())
   },[])
+  //FIXME: filter empty data
   const regions:any = {west: 'ЗХ',center: 'ЦН',east: 'СХ', '': ''}
   return (
     <div className='history-grid'>

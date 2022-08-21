@@ -27,9 +27,9 @@ export function loadSwitcherData(){
 }
 export function updateThemeData(){
     let theme = ''
-    console.log(document.querySelector('body')!.classList.forEach((val, i) => {
+    document.querySelector('body')!.classList.forEach((val, i) => {
       theme += val + ','
-    }))
+    })
     theme = theme.split(',').filter(i => i != '').toString()
     setData(THEME_KEY, theme)
 }

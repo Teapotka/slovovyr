@@ -9,9 +9,10 @@ import WinModal from './WinModal'
 
 const calculate = () =>{
   const value = Math.trunc(+document.getElementById('timer')!.style.strokeDashoffset.slice(0, -2)*300/248.18588256835938)
-  console.log(value)
+  console.log('CALC',value)
   return value
 }
+//FIXME: modal anim
 const ModalContainer = () => {  
     const modal = useSelector((state:RootState)=> state.modals.modal)
     console.log(modal)

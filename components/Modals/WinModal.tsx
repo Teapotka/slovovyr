@@ -21,7 +21,6 @@ const WinModal:FC<{calculate: ()=>number}> = ({calculate}) => {
         // console.log(document.getElementById('timer')?.style.strokeDashoffset.slice(0, -2))
         recordData(calculate(), true)
         readAllData()
-        controllers.pause()
     }, []);
     const close = () => {
         console.log('before click')
