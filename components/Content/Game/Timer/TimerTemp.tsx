@@ -8,15 +8,17 @@ import { setFunctions } from '../../../../store/animationSlice'
 import { toggle } from '../../../../store/modalSlice'
 import { TimerAnimation } from './TimerAnim'
 
+
 const TimerTemp = () => {
     const [animation, setanimation] = useState<any>(null)
-    const router = useRouter()
     const dispatch = useDispatch()
     const modal = useSelector((state: RootState) => state.modals.modal)
     const anim = useSelector((state: RootState) => state.animations)
+    const [end, setend] = useState(false)
     useEffect(() => {
         console.log('mount')
-        dispatch(setFunctions({ play: 'none', pause: 'none' }))
+        console.log('end',end)
+        dispatch(setFunctions({ play: 'none', pause: 'none', remove: 'none' }))
         console.log('step 1')
         setanimation(TimerAnimation())
         console.log('step 2')
@@ -31,17 +33,25 @@ const TimerTemp = () => {
                 targets: '#timer',
                 strokeDashoffset: [0, anime.setDashoffset],
             })
-            animation.finished.then(() => {
-                console.log('try to end')
-                if(new URL(document.URL).pathname == '/game')
+            animation.finished.then(()=>{
                 dispatch(toggle('lose'))
             })
-            dispatch(setFunctions({ play: animation.play, pause: animation.pause }))
+            dispatch(setFunctions({ play: animation.play, pause: animation.pause, remove: animation.remove }))
         }
         if (animation != null){
-            console.log('modal here', anim, modal, animation)
-            modal == 'none' ?
-            animation.play() : animation.pause()
+            if(modal == 'win' || modal == 'lose')
+            {
+                console.log('remove')
+                animation.remove('#timer')
+                setend(true)
+            }
+            else{
+                if(!end){
+                    console.log('controll')
+                    modal == 'none' ?
+                    animation.play() : animation.pause()
+                }
+            }
         }
     }, [animation, modal])
     return (

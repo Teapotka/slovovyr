@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import Cross from '../../assets/Cross'
 import { RootState } from '../../store'
@@ -7,11 +7,18 @@ import { toggle } from '../../store/modalSlice'
 const InfoModal = () => {
     const dispatch = useDispatch()
     const controllers = useSelector((state: RootState) => state.animations)
+    useEffect(()=>{
+      setTimeout(()=>{
+        document.querySelector('.modal')?.classList.add('anim-appear')
+      })
+    },[])
     const close = () => {
-      console.log('before click')
-    //   document.getElementById('logo')!.click() 
-    // controllers.play()
-      dispatch(toggle('none'))   
+      document.querySelector('.modal')?.classList.remove('anim-appear')
+      document.querySelector('.modal')?.classList.add('anim-hide')
+      setTimeout(()=>{
+        dispatch(toggle('none'))
+        console.log('before click')
+      },800)
     }
     return (
       <div className='info-modal'>

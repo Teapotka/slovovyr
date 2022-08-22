@@ -3,7 +3,9 @@ import React, { useEffect, useState } from 'react'
 import { Provider } from 'react-redux'
 import History from '../components/Content/History/History'
 import Grid from '../components/Grid/Grid'
+import GridTemp from '../components/Grid/GridTemp'
 import HeaderAlternative from '../components/Header/HeaderAlternative'
+import HeaderTemp from '../components/Header/HeaderTemp'
 import { readAllData } from '../data/localMemory'
 import { store } from '../store'
 
@@ -18,12 +20,12 @@ import { store } from '../store'
 const HistoryPage = () => {
     return (
     <>
-    <Provider store={store}>
-    <Grid>
-        <HeaderAlternative/>
+    {/* <Provider store={store}> */}
+    <GridTemp>
+        <HeaderTemp type='alternative'/>
         <History/>
-    </Grid>
-    </Provider>
+    </GridTemp>
+    {/* </Provider> */}
     </>
     )
 }

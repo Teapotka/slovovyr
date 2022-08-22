@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import { useEffect } from 'react'
 import { Provider } from 'react-redux'
 import Landing from '../components/Content/Landing/Landing'
 import Grid from '../components/Grid/Grid'
@@ -10,12 +11,12 @@ import { store } from '../store'
 const Home: NextPage = () => {
   return (
    <>
-       <Provider store={store}>   
+       {/* <Provider store={store}>    */}
    <GridTemp>
       <HeaderTemp type='landing'/>
       <Landing/>
     </GridTemp>
-       </Provider>
+       {/* </Provider> */}
    </>
   )
 }

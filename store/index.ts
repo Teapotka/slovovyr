@@ -10,9 +10,11 @@ export const store =  configureStore({
         // ignoredActions: ['your/action/type'],
         // Ignore these field paths in all actions
         ignoredActionPaths: ['meta.arg', 'payload.timestamp', 
-        'payload.play', 'payload.pause', 'animations.pause', 'animations.play'],
+        'payload.play', 'payload.pause', 'animations.pause', 
+        'animations.play', 'animations.remove', 'payload.remove'],
         // Ignore these paths in the state
-        ignoredPaths: ['payload.play', 'payload.pause', 'animations.pause', 'animations.play'],
+        ignoredPaths: ['payload.play', 'payload.pause', 'animations.pause',
+         'animations.play','animations.remove', 'payload.remove'],
       },
     }),
     reducer:{

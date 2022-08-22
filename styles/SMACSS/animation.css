@@ -78,3 +78,14 @@
 .field .field-item {
     transition: border-color  0.5s;
 }
+.modal{
+    opacity: 0;
+}
+.anim-hide{
+    transition: opacity 0.8s;
+    opacity: 0; 
+}
+.anim-appear{
+    transition: opacity 0.8s;
+    opacity: 1; 
+}

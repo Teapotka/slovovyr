@@ -13,7 +13,7 @@ const History = () => {
   const regions:any = {west: 'ЗХ',center: 'ЦН',east: 'СХ', '': ''}
   return (
     <div className='history-grid'>
-      {history.map(k=><div className='history-item' key={history.indexOf(k)}>
+      {history[0].date !=  '' ? history.map(k=><div className='history-item' key={history.indexOf(k)}>
         <div className='history-row'>
           <span>{k.date}</span>
           <span>{regions[k.region]}</span>
@@ -21,7 +21,10 @@ const History = () => {
           <span>{k.result ? <Yes/> : <No/>}</span>
         </div>
       <div className='horizontal-line-alt'></div>
-      </div>)}
+      </div>)
+      :
+      <div className='block-header'>Історія порожня</div>
+      }
     </div>
   )
 }

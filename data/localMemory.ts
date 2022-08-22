@@ -63,9 +63,22 @@ export function processData():
             result: timeAndResult[1] === 'true'
         }
     })
-    console.log(info)
+    console.log(info);
     //@ts-ignore
-    return info.reverse()
+    return info.sort(function(a, b) {
+        const timeA = +a.time.split(':')[0]*60 +  (+a.time.split(':')[1])
+          const timeB = +b.time.split(':')[0]*60 +  (+b.time.split(':')[1])
+       if (new Date(0).setSeconds(timeA) > new Date(0).setSeconds(timeB) ) {
+         return 1;
+       }
+       if (new Date(0).setSeconds(timeA) < new Date(0).setSeconds(timeB)) {
+         return -1;
+       }
+       // a must be equal to b
+       return 0;
+     });
+    
+    // return info.reverse()
 }
 export function checkData(){
     const {data, keys} = readAllData()

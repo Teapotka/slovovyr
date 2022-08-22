@@ -1,6 +1,7 @@
 import classNames from 'classnames'
 import React, { FC, ReactNode } from 'react'
 import { useSelector } from 'react-redux'
+import { CSSTransition } from 'react-transition-group'
 import { RootState } from '../../store'
 import InfoModal from './InfoModal'
 import LoseModal from './LoseModal'
@@ -25,9 +26,14 @@ const ModalContainer = () => {
     }
   return (
     <>
+    {/* <CSSTransition
+    in={modal != 'none'}
+    timeout={0}
+    classNames={'modal'}> */}
         <div className={classNames('modal', modal == 'none' && 'is-hidden')}>
         {modals[modal]}
         </div>
+    {/* </CSSTransition> */}
     </>
   )
 }

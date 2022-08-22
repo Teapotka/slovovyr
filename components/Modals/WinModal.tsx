@@ -19,13 +19,21 @@ const WinModal:FC<{calculate: ()=>number}> = ({calculate}) => {
     useEffect(() => {
         // document.getElementById('logo')!.click()
         // console.log(document.getElementById('timer')?.style.strokeDashoffset.slice(0, -2))
+        controllers.remove('#timer')
         recordData(calculate(), true)
-        readAllData()
+        // readAllData()
+        setTimeout(()=>{
+            document.querySelector('.modal')?.classList.add('anim-appear')
+          })
     }, []);
     const close = () => {
+        document.querySelector('.modal')?.classList.remove('anim-appear')
+        document.querySelector('.modal')?.classList.add('anim-hide')
+        setTimeout(()=>{
         console.log('before click')
         dispatch(toggle('none'))
         router.push('/')
+        },800)
     }
     return (
         <div className='win-modal'>

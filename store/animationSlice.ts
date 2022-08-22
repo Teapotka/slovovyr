@@ -7,13 +7,14 @@ type TAction = {
 type TInitial = {
     pause: any
     play: any
-    progress: any
+    remove: any
 }
 const animationSlice = createSlice({
     name: 'animation',
     initialState: {
         pause: 'none',
         play: 'none',
+        remove: 'none',
     } as TInitial,
     reducers: {
         setFunctions(state, action:TAction){
@@ -21,6 +22,7 @@ const animationSlice = createSlice({
             // console.log(action.payload)
             state.pause = action.payload.pause
             state.play = action.payload.play
+            state.remove = action.payload.remove
             console.log('set')
         }
     }

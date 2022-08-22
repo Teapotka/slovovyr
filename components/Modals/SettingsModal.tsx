@@ -13,12 +13,19 @@ const SettingsModal = () => {
   const router = useRouter()
   useEffect(()=>{
     loadSwitcherData()
+    setTimeout(()=>{
+      document.querySelector('.modal')?.classList.add('anim-appear')
+    })
   },[])
   const close = () => {
-    console.log('before click')
+    document.querySelector('.modal')?.classList.remove('anim-appear')
+    document.querySelector('.modal')?.classList.add('anim-hide')
+    setTimeout(()=>{
+      dispatch(toggle('none'))
+      console.log('before click')
+    },800)
     // if (router.pathname == '/game')
     //   controllers.play()
-    dispatch(toggle('none'))
   }
   const theme = (e: React.MouseEvent<HTMLDivElement>, theme: string) => {
     console.log(e.target)

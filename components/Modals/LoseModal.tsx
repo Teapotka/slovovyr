@@ -18,13 +18,21 @@ const LoseModal:FC<{calculate: ()=>number}> = ({calculate}) => {
 
     useEffect(() => {
         // document.getElementById('timer')!.remove()
+        controllers.remove('#timer')
         // console.log(document.getElementById('timer')?.getAttribute('stroke-dasharray'))
         recordData(calculate(), false)
+        setTimeout(()=>{
+            document.querySelector('.modal')?.classList.add('anim-appear')
+          })
     }, []);
     const close = () => {
+        document.querySelector('.modal')?.classList.remove('anim-appear')
+        document.querySelector('.modal')?.classList.add('anim-hide')
+        setTimeout(()=>{
         console.log('before click')
         dispatch(toggle('none'))
         router.push('/')
+        },800)
     }
     return (
         <div className='lose-modal'>

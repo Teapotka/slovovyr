@@ -11,9 +11,10 @@ import { toggle } from '../../store/modalSlice'
 const HeaderTemp:FC<{type: 'landing'|'game'|'alternative'}> = ({type}) => {    
   const router = useRouter()
   const dispatch = useDispatch()
+  const remove = useSelector((state: RootState)=>state.animations.remove)
 const handle = () =>{
     if(router.pathname == '/game'){
-        dispatch(toggle('none'))
+        remove('#timer')
     }
     router.push('/')
 }

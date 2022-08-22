@@ -6,21 +6,23 @@ import Grid from '../components/Grid/Grid'
 import GridTemp from '../components/Grid/GridTemp'
 import Header from '../components/Header/HeaderGame'
 import HeaderTemp from '../components/Header/HeaderTemp'
-import { CHOISE_KEY, getData } from '../data/localMemory'
+import { CHOISE_KEY, getData, readAllData } from '../data/localMemory'
 import { store } from '../store'
 
 const game = () => {
   const router = useRouter()
   useEffect(()=>{
     getData(CHOISE_KEY) ? null : router.push('/')
+    //@ts-ignore
+    readAllData().data.length == 0 && document.querySelector('.temp-l-icons .temp-center-box').click()
   })
     return (
-      <Provider store={store}>
+      // <Provider store={store}>
       <GridTemp>
          <HeaderTemp type='game'/>
          <Game/>
     </GridTemp>
-      </Provider>
+      // </Provider>
   )
 }
 

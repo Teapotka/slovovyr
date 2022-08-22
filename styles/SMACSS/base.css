@@ -10,10 +10,18 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-   
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+
 pre{
     font-family: 'Source Code Pro';
     font-size: 13px;
@@ -26,9 +34,6 @@ pre{
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;    
 
-}
-a{
-    font-family: 'Source Code Pro';
 }
 ::-webkit-scrollbar{
     display: none; /* Hide scrollbar for Chrome, Safari and Opera */
@@ -45,5 +50,23 @@ a{
     color: #404040;
     text-decoration: none;
 }
+ul li{
+    padding-bottom: 10px;
+    margin-left: 30px;
+}
+ul li:first-child{
+    padding-top: 10px;
+}
 svg {    pointer-events: none;}
 path{    pointer-events: auto;}
+.temp-center-box,
+.temp-l-navigation div,
+.button,
+#center,
+#linkSVG,
+#west,
+#east,
+.keyboard-item,
+a{
+    cursor: pointer;
+}
