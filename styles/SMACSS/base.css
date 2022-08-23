@@ -24,6 +24,7 @@
 html{
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 .temp-l-grid{
     overflow: hidden;
@@ -49,6 +50,7 @@ body{
     color: #404040;
     background-color: #ffffff;
     height: 100%;
+    overflow: hidden;
 }
 a:active,
 a:hover,
