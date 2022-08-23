@@ -48,6 +48,7 @@ body{
     font-family: 'KyivRegion';
     color: #404040;
     background-color: #ffffff;
+    height: 100%;
 }
 a:active,
 a:hover,
