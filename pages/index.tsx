@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   return (
    <>
        {/* <Provider store={store}>    */}
-   <GridTemp>
+   <GridTemp state='is-scrolless'>
       <HeaderTemp type='landing'/>
       <Landing/>
     </GridTemp>

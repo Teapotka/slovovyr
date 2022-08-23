@@ -21,7 +21,7 @@ const HistoryPage = () => {
     return (
     <>
     {/* <Provider store={store}> */}
-    <GridTemp>
+    <GridTemp state=''>
         <HeaderTemp type='alternative'/>
         <History/>
     </GridTemp>

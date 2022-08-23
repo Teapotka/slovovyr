@@ -18,7 +18,7 @@ const game = () => {
   })
     return (
       // <Provider store={store}>
-      <GridTemp>
+      <GridTemp state='is-scrolless'>
          <HeaderTemp type='game'/>
          <Game/>
     </GridTemp>

@@ -28,7 +28,7 @@ import { store } from '../store'
 const Server = () => {
   return (
     // <Provider store={store}>
-    <GridTemp>
+    <GridTemp state=''>
       <HeaderTemp type='alternative'/>
       <Development/>
     </GridTemp>

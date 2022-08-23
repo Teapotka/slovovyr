@@ -8,7 +8,7 @@ import { store } from '../store'
 const AboutPage = () => {
   return (
     // <Provider store={store}>
-        <GridTemp>
+        <GridTemp state=''>
             <HeaderTemp type='alternative'/>
             <About/>
         </GridTemp>
