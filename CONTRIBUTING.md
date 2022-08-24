@@ -39,7 +39,7 @@
 
 ### <a name='style-ua'>Стилі</a>
 
-Ми використовуємо методологію SMACSS з доповненням (animation.css та media.css) і CSS модулі. При роботі з:
+Ми використовуємо методологію **SMACSS** з доповненням (animation.css та media.css) і CSS модулі. При роботі з:
 + `base.css` - використовуйте селектори тегів (button, div, *)
 + `layout.css` - використовуйте селектори класів з префіксом l- (.l-header, .l-content)
 + `modules.css` - використовуйте селектори класів та запотреби псевдокласи (.keyboard div, .keyboard div:last-child)
@@ -52,24 +52,62 @@
 
 Ідентифікатори використовуються для svg (з суфіксом SVG: vyrSVG, crossSVG) та специфічних елементів (клавіатура, мапа). В усіх інших випадках старайтеся уникати їх
 
-СSS модулі розміщуйте в одній папці з компонентою (назва каталога + .module.css). Намагайтеся мінімізувати повторення стилів.
+**СSS Модулі** - це ізольовані стилі компонети, які не потребують анімацій, пошуку за допомогою .querySelector, медіа запитів та прямого зв'язку з `theme.css`.
+
+Завжди варто зберігати баланс між модулями і звичайними стилями. Також розміщуйте СSS модулі в одній папці з компонентою (назва каталога + .module.css) та намагайтеся мінімізувати повторення стилів. 
 
 ---
 
 ### <a name='stucture-ua'>Структура</a>
+#### Умовні позначення
+? - необов'язково
+/ - каталог
+.tsx - компонента
 
 ```mermaid
 graph TD;
-    Page-->Provider;
-    Provider-->Grid.tsx;
-    Grid.tsx-->ModalContainer.tsx;
-    Grid.tsx-->children;
+    Page-->GridTemp.tsx;
+    Page--?-->NextSeo.tsx;
+    GridTemp.tsx-->ModalContainer.tsx;
+    ModalContainer.tsx-->WinModal.tsx;
+    ModalContainer.tsx-->LoseModal.tsx;
+    ModalContainer.tsx-->SettingsModal.tsx;
+    ModalContainer.tsx-->InfoModal.tsx;
+    GridTemp.tsx-->children;
     children-->/Header;
-    /Header-- or-->Header.tsx;
-    /Header-- or-->HeaderGame.tsx;
+    /Header-->HeaderTemp.tsx;
     children-->/Content;
-    /Content-- or--> Landing.tsx;
-    /Content-- or--> Game.tsx;
+    /Content-- або--> /About;
+    /Content-- або--> /Development;
+    /Content-- або--> /Game;
+    /Content-- або--> /History;
+    /Content-- або--> /Landing;
+    /About--> About.tsx;
+    /Development--> Development.tsx;
+    /Game--> Game.tsx;
+    /History--> History.tsx;
+    /Landing--> Landing.tsx;
+    About.tsx--> /Blocks;
+    /Blocks--> LinkBlock.tsx;
+    /Blocks--> PhotoBlock.tsx;
+    /Blocks--> TextBlock.tsx;
+    Development.tsx--> /Blocks`;
+    /Blocks`--> /ApiBlock.tsx;
+    /Blocks`--> /ExBlock.tsx;
+    Game.tsx--> /Field;
+    Game.tsx--> /Keyboard;
+    Game.tsx--> /Timer;
+    /Field--> Field.tsx;
+    /Keyboard--> Keyboard.tsx;
+    /Timer--> TimerTemp.tsx;
+    Landing.tsx--> /GameStart;
+    Landing.tsx--> /GameLand;
+    /GameStart--> GameStart.tsx;
+    GameStart.tsx--> Map.tsx;
+    Map.tsx--> Center.tsx;
+    Map.tsx--> East.tsx;
+    Map.tsx--> West.tsx;
+    /GameLand--> GameLand.tsx;
 
 ```
 
@@ -154,35 +192,76 @@ Tasks will be posted here over time.
 
 ### <a name='style-us'>Styles</a>
 
-We use the SMACSS methodology with the addition (animation.css). When working with:
-+ base.css - use tag selectors (button, div, *)
-+ layout.css - use class selectors with the prefix l- (.l-header, .l-content)
-+ modules.css - use class selectors and use pseudo-classes (.keyboard div, .keyboard div:last-child)
-+ state.css - use class selectors with the prefix is- (.is-hidden, .is-wrong, .is-right)
-+ theme.css - use selectors of classes and child elements (.dark .modal, .color-blindness .is-right)
-+ animation.css - use any selectors
+We use the **SMACSS** methodology with the addition (animation.css). When working with:
++ `base.css` - use tag selectors (button, div, *)
++ `layout.css` - use class selectors with the prefix l- (.l-header, .l-content)
++ `modules.css` - use class selectors and use pseudo-classes (.keyboard div, .keyboard div:last-child)
++ `state.css` - use class selectors with the prefix is- (.is-hidden, .is-wrong, .is-right)
++ `theme.css` - use selectors of classes and child elements (.dark .modal, .color-blindness .is-right)
++ `animation.css` and `media.css` - use any selectors
 
 :page_with_curl: [Docs (EN)](http://smacss.com/book/)
 :page_with_curl: [Blog (RU)](https://medium.com/@companjero/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F-smacss-e601222cd4eb)
 
-Identifiers are used for svg (with SVG suffix: vyrSVG, crossSVG) and individual elements (keyboard, map). In all other cases, try to avoid them
+Identifiers are used for svg (with SVG suffix: vyrSVG, crossSVG) and individual elements (keyboard, map). In all other cases, try to avoid them.
+
+**CSS Modules** are isolated component styles that do not require animations, search using .querySelector, media queries and direct communication with `theme.css`.
+
+Always keep a balance between modules and regular styles. Also, place CSS modules in the same folder as the component (directory name + .module.css) and try to minimize duplicate styles.
 
 ---
 
 ### <a name='stucture-us'>Stucture</a>
 
+#### Legend
+? - optional
+/ - directory
+.tsx - component
+
 ```mermaid
 graph TD;
-    Page-->Provider;
-    Provider-->Grid.tsx;
-    Grid.tsx-->ModalContainer.tsx;
-    Grid.tsx-->children;
+    Page-->GridTemp.tsx;
+    Page--?-->NextSeo.tsx;
+    GridTemp.tsx-->ModalContainer.tsx;
+    ModalContainer.tsx-->WinModal.tsx;
+    ModalContainer.tsx-->LoseModal.tsx;
+    ModalContainer.tsx-->SettingsModal.tsx;
+    ModalContainer.tsx-->InfoModal.tsx;
+    GridTemp.tsx-->children;
     children-->/Header;
-    /Header-- or-->Header.tsx;
-    /Header-- or-->HeaderGame.tsx;
+    /Header-->HeaderTemp.tsx;
     children-->/Content;
-    /Content-- or--> Landing.tsx;
-    /Content-- or--> Game.tsx;
+    /Content-- or--> /About;
+    /Content-- or--> /Development;
+    /Content-- or--> /Game;
+    /Content-- or--> /History;
+    /Content-- or--> /Landing;
+    /About--> About.tsx;
+    /Development--> Development.tsx;
+    /Game--> Game.tsx;
+    /History--> History.tsx;
+    /Landing--> Landing.tsx;
+    About.tsx--> /Blocks;
+    /Blocks--> LinkBlock.tsx;
+    /Blocks--> PhotoBlock.tsx;
+    /Blocks--> TextBlock.tsx;
+    Development.tsx--> /Blocks`;
+    /Blocks`--> /ApiBlock.tsx;
+    /Blocks`--> /ExBlock.tsx;
+    Game.tsx--> /Field;
+    Game.tsx--> /Keyboard;
+    Game.tsx--> /Timer;
+    /Field--> Field.tsx;
+    /Keyboard--> Keyboard.tsx;
+    /Timer--> TimerTemp.tsx;
+    Landing.tsx--> /GameStart;
+    Landing.tsx--> /GameLand;
+    /GameStart--> GameStart.tsx;
+    GameStart.tsx--> Map.tsx;
+    Map.tsx--> Center.tsx;
+    Map.tsx--> East.tsx;
+    Map.tsx--> West.tsx;
+    /GameLand--> GameLand.tsx;
 
 ```
 
