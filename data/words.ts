@@ -115,4 +115,5 @@ export default
         ]
     },
 ];
-export const time = new Date().getDate() - 1
+//@ts-ignore
+export const time = +new Date().toDateString({timeZone: 'Europe/Kiev'}).split(' ')[2] - 1
