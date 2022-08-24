@@ -15,12 +15,10 @@ const game = () => {
     readAllData().data.length == 0 && document.querySelector('.temp-l-icons .temp-center-box').click()
   })
     return (
-      // <Provider store={store}>
       <GridTemp state='is-scrolless'>
          <HeaderTemp type='game'/>
          <Game/>
     </GridTemp>
-      // </Provider>
   )
 }
 

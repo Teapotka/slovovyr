@@ -10,6 +10,16 @@
     width: 100vw;
     height: 100vh;
 }
+.border{
+    border-radius: 5px;
+    border: #404040 1px solid;
+}
+.line{
+    background-color: #404040;
+    justify-self: center;
+    width: 80%;
+    height: 1px;
+}
 .temp-center-box{
     display: flex;
     align-items: center;
