@@ -8,7 +8,7 @@ const Home: NextPage = () => {
   console.log('WORD',  words
   .filter(w => w.region == 'center')
   [0].words[new Date().getDate() - 1], new Date().getDate() - 1, words
-  .filter(w => w.region == 'center'), new Date().getTimezoneOffset(), time)
+  .filter(w => w.region == 'center'), new Date().getTimezoneOffset(), time, process.env.TZ)
   return (
    <>
    <GridTemp state='is-scrolless'>
