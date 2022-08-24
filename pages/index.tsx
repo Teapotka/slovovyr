@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import Landing from '../components/Content/Landing/Landing'
 import GridTemp from '../components/Grid/GridTemp'
 import HeaderTemp from '../components/Header/HeaderTemp'
-import { store } from '../store'
 
 const Home: NextPage = () => {
   return (

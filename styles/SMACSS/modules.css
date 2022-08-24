@@ -74,6 +74,7 @@
     align-items: center;
     justify-self: center;
     align-self: center;
+    text-align: center;
 }
 .temp-timer{
     display: flex;

@@ -29,34 +29,30 @@
 Тут будуть розміщуватися завдання з плином часу. 
 | Завдання    |  Виконано  |
 | ----------- |   :----:   |
-|Пристосувати vyr.svg<br/>та logo.svg до розмірів<br/>(мінімум 320х500) екрану.|:x:|
-|Оптимізувати стилі.|:x:|
-|~~Зробити функцію зміни теми<br/>(світла/темна/дальтонізм).~~|:heavy_check_mark:|
-|~~Рефакторинг функції toggle<br/>(components/Content/Landing/<br/>Map.tsx). Бажано використати<br/>state.css та classnames.~~|:heavy_check_mark:|
-|Видалити console.log()|:x:|
-|~~Реалізувати запис інформації в localstorage~~|:heavy_check_mark:|
-|Вдосконалити API|:x:|
-|Оптимізувати алгоритм внесення/очищення/підтвердження (components/Game/Field/)|:x:|
-|таймер до нового слова|:x:|
-|~~пауза гри та виграш/програш~~|:heavy_check_mark:|
-|затримка api більше 3сек - відміна|:x:|
+|помилка dayword API<br/>під час гри о 00:00|:x:|
+|затримка word API - помилка 408|:x:|
+|Unit тести|:x:|
+|Висота .l-game-grid<br/>(layout.css) - розмір в'юпорта|:x:|
+|Видалити всі console.log fn|:x:|
 
 ---
 
 ### <a name='style-ua'>Стилі</a>
 
-Ми використовуємо методологію SMACSS з доповненням (animation.css). При роботі з:
-+ base.css - використовуйте селектори тегів (button, div, *)
-+ layout.css - використовуйте селектори класів з префіксом l- (.l-header, .l-content)
-+ modules.css - використовуйте селектори класів та запотреби псевдокласи (.keyboard div, .keyboard div:last-child)
-+ state.css - використовуйте селектори класів з префіксом is- (.is-hidden, .is-wrong, .is-right)
-+ theme.css - використовуйте селектори класів та дочірніх елементів (.dark .modal, .color-blindness .is-right)
-+ animation.css - використовуйте будь-які селектори
+Ми використовуємо методологію SMACSS з доповненням (animation.css та media.css) і CSS модулі. При роботі з:
++ `base.css` - використовуйте селектори тегів (button, div, *)
++ `layout.css` - використовуйте селектори класів з префіксом l- (.l-header, .l-content)
++ `modules.css` - використовуйте селектори класів та запотреби псевдокласи (.keyboard div, .keyboard div:last-child)
++ `state.css` - використовуйте селектори класів з префіксом is- (.is-hidden, .is-wrong, .is-right)
++ `theme.css` - використовуйте селектори класів та дочірніх елементів (.dark .modal, .color-blindness .is-right)
++ `animation.css` та `media.css` - використовуйте будь-які селектори
 
 :page_with_curl: [Документація (EN)](http://smacss.com/book/)
 :page_with_curl: [Блог (RU)](https://medium.com/@companjero/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F-smacss-e601222cd4eb)
 
 Ідентифікатори використовуються для svg (з суфіксом SVG: vyrSVG, crossSVG) та специфічних елементів (клавіатура, мапа). В усіх інших випадках старайтеся уникати їх
+
+СSS модулі розміщуйте в одній папці з компонентою (назва каталога + .module.css). Намагайтеся мінімізувати повторення стилів.
 
 ---
 
@@ -148,17 +144,11 @@ Tasks will be posted here over time.
 
 | Task        |  Completed |
 | ----------- |   :----:   |
-|Adapt vyr.svg and logo.svg<br/> to size screen(minimum 320x500).|:x:|
-|Optimize styles.|:x:|
-|~~Make a theme change feature<br/>(light/dark/color-blindness).~~|:heavy_check_mark:|
-|~~Refactoring of the toggle function<br/>(components/Content/Landing/<br/>Map.tsx). It is recommended to use<br/>state.css and classnames.~~|:heavy_check_mark:|
-|Delete console.log()|:x:|
-|~~Implement the recording of information in the localstorage~~|:heavy_check_mark:|
-|Improve API|:x:|
-|Optimize input/clear/submit algorithms(components/Game/Field/)|:x:|
-|timer to new word|:x:|
-|~~game pause and win/loss~~|:heavy_check_mark:|
-|api delay more than 3 seconds - cancellation|:x:|
+|dayword API error<br/>while playing at 00:00|:x:|
+|word API response delay - 408 error|:x:|
+|Unit tests|:x:|
+|.l-game-grid (layout.css)<br/>height - viewport size|:x:|
+|Delete all console.log fn|:x:|
 
 ---
 
