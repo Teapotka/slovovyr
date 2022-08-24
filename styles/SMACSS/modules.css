@@ -1,12 +1,3 @@
-.navigation { /*navigation bar in header*/
-    font-size: 20px;
-    width: 100%;
-    padding: 0 10px;
-    display: flex;
-    justify-content: space-between;
-    justify-self: center;
-    align-self: center;
-}
 .modal{
     position: absolute;
     top: 0;
@@ -19,89 +10,60 @@
     width: 100vw;
     height: 100vh;
 }
-.temp-l-grid{
-    display: grid;
-    grid-template-rows: 50px calc(100vh - 50px);
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-.temp-l-header-landing{
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-rows: 1fr;
-    grid-template-columns: minmax(150px, 300px) minmax(auto, 100vw);
-}
-.temp-l-navigation{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10px;
-    font-size: 20px;
-}
-.temp-l-icons{
-    display: flex;
-    justify-self: flex-end;
-    align-self: center;
-    padding: 0 10px;
-}
-.temp-l-icons div:nth-child(2){
-    margin-left: 10px;
-}
-.temp-l-header-game{
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-rows: 1fr;
-    grid-template-columns: 25vw 50vw 25vw;
-}
-.temp-l-logo{
-    display: flex;
-    align-items: center;
-    width: 70%;
-    max-width: 150px;
-    justify-self: center;
-    align-self:center ;
-}
 .temp-center-box{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.temp-l-header-alternative{
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-rows: 1fr;
-    grid-template-columns: 25vw 50vw 25vw;
-}
-.about-grid{
-    display: grid;
-    justify-content: center;
-    grid-auto-rows: max-content;
-    row-gap: 40px;
-    overflow: scroll;
-    height: calc(100vh - 50px);
-    padding: 0 10px 30px 10px;
-}
-.text-item{
+.header-label{
+    padding-top: 30px;
+    font-size: 30px;
     text-align: center;
-    max-width: 500px;
 }
-.photo-block{
+
+.switch-modal{
+    align-self: center;
+    justify-self: flex-end;
+    padding-right: 10px;
+}
+
+.vyr { /*vyr container*/
     display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
     align-items: center;
+    max-width: 250px;
+    width: 80vw;
 }
-.about-grid :nth-child(6){
-    justify-content: flex-end;
+
+.logo { /*logo container*/
+    display: flex;
+    justify-self: center;
+    align-self: flex-start;
+    justify-content: center;
+    align-items: center;
+    max-width: 230px;
+    width: 90vw;
 }
-.about-grid :nth-child(8){
-    text-align: center;
+.map{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    width: 80vw;
+}
+.button { /*button element*/
+    display: flex;
+    width: 250px;
+    height: 70px;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
 }
 .temp-timer{
     display: flex;
@@ -112,331 +74,11 @@
     justify-content: center;
     align-items: center;
 }
-.thumbnail{
-    object-fit: contain;
-    width: 30%;
-    max-width: 200px;
-    height: auto;
-    clip-path: circle();
-}
-.desc-block{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 70px;
-    padding: 0 10px;
-}
-.desc-block:first-child{
-    text-align: right;
-}
-.horizontal-line{
-    background-color: #404040;
-    display: flex;
-    width: 80%;
-    margin: 30px 10% 0 10%;
-    height: 1px;
-}
-.block-container{
-    overflow: scroll;
-    height: calc(100vh - 50px);
-}
-.history-grid{
-    padding-top: 30px;
-    display: grid;
-    grid-auto-rows: 30px;
-    overflow: scroll;
-    height: calc(100vh - 50px);
-    row-gap: 30px;
-}
-.horizontal-line-alt{
-    background-color: #404040;
-    display: flex;
-    width: 80%;
-    margin: 5px 10% 0 10%;
-    height: 1px;
-}
-.history-item{
-    height: 30px;
-}
-.history-row{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
-}
-.block-api{
-    width: 80vw;
-    margin: 0 10vw;
-    display: grid;
-    row-gap: 30px;
-    text-align: center;
-}
-.block-container a{
-    font-family: 'Source Code Pro';
-}
-.block-ex{
-    width: 80vw;
-    margin: 0 10vw;
-    display: grid;
-    row-gap: 40px;
-}
-.block-content{
-    border: #404040 1px solid;
-    padding: 15px 0;
-    border-radius: 5px;
-    display: grid;
-    grid-row: 20% auto;
-    row-gap: 20px;
-    width: 80vw;
-    justify-content: center;
-    font-family: 'Source Code Pro';
-}
-.block-content:last-child{
-    /* padding-bottom: 20px; */
-    margin-bottom: 20px;
-}
-.block-json{
-    padding: 15px;
-    display: flex;
-    width: 80vw;
-    word-break: break-all;
-}
-.block-link{
-    text-align: center;
-}
-.block-def{
-    text-align: center;
-}
-.block-header{
-    padding-top: 30px;
-    font-size: 30px;
-    text-align: center;
-}
-.block-icon{
-    justify-self: center;
-}
-.block-box{
-    display: grid;
-    row-gap: 20px;
-    padding: 10px 0 30px 0;
-    font-family: 'KyivRegion';
-}
-.settings-modal{
-    display: grid;
-    grid-template-rows: 20% 80%;
-    width: 250px;
-    height: 150px;
-    border: 1px #404040 solid;
-    border-radius: 10px;
-}
-.info-modal{
-    display: grid;
-    grid-template-rows: 12% 80%;
-    width: 250px;
-    height: 450px;
-    border: 1px #404040 solid;
-    border-radius: 10px;
-}
-.win-modal{
-    display: grid;
-    grid-template-rows: 20% 80%;
-    width: 250px;
-    height: 130px;
-    border: 1px #02FF0C solid;
-    border-radius: 10px;
-}
-.lose-modal{
-    display: grid;
-    grid-template-rows: 20% 80%;
-    width: 250px;
-    height: 130px;
-    border: 1px #FD8383 solid;
-    border-radius: 10px;
-}
-.header-modal{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-}
-.cross-modal{
-    justify-content: flex-end;
-    align-items: flex-start;
-    justify-self: flex-end;
-    align-self: flex-start;
-    display: flex;
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-}
-.label-modal{
-    grid-column: 2/3;
-    justify-self: center;
-    align-self: center;
-}
-.settings-content-modal{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-.info-content-modal{
-    display: grid;
-    grid-template-rows: 2fr 2fr 3fr;
-}
-.info-word{
-    text-align: center;
-}
-.win-content-modal{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-.word-modal{
-    padding: 10px;
-    justify-self: center;
-    align-self: flex-end;
-    padding-bottom: 10px;
-}
-.def-modal{
-    padding-top: 10px;
-    justify-self: center;
-    align-self: flex-start;
-}
-.intro-modal{
-    font-size: 9px;
-    text-align: center;
-}
-.field-modal{
-    margin-top: 18px;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-.field-item-modal{
-    margin: 0 1.5px;
-    display: flex;
-    width: 40px;
-    height: 40px;
-    border: #404040 solid 2px;
-    border-radius: 5px;
-    font-size: 30px;
-    align-items: center;
-    justify-content: center;
-}
-.rules-modal{
-    padding-top: 18px;
-}
-.row-modal{
-    padding: 0 10px 8px 10px;
-    display: flex;
-    align-items: center;
-}
-.comment-modal{
-    margin-left: 5px;
-    font-size: 10px;
-}
-.example-modal{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-.text-modal{
-    align-self: center;
-    padding-left: 10px;
-}
-.switch-modal{
-    align-self: center;
-    justify-self: flex-end;
-    padding-right: 10px;
-}
 
-.icon { /*settings icon*/
-    width: 100%;
-    padding: 0 10px;
-    align-self: center;
-    justify-self: flex-end;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.vyr { /*vyr container*/
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    justify-content: center;
-    align-items: center;
-    max-width: 300px;
-    width: 80vw;
-}
-
-.logo { /*logo container*/
-    display: flex;
-    justify-self: center;
-    align-self: flex-start;
-    justify-content: center;
-    align-items: center;
-    max-width: 300px;
-    width: 90vw;
-    /* grid-row: 3/4; */
-}
-.map{
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    justify-content: center;
-    align-items: center;
-    max-width: 450px;
-    width: 80vw;
-    /* opacity: 0; */
-    /* height: 0; */
-    /* grid-row: 2/4; */
-}
-.button { /*button element*/
-    display: flex;
-    width: 250px;
-    height: 70px;
-    font-size: 30px;
-    border-radius: 5px;
-    border: 1px solid #404040;
-    justify-content: center;
-    align-items: center;
-    justify-self: center;
-    align-self: center;
-    /* grid-row: 4/4; */
-}
-.back-arrow{
-    display: flex;
-    justify-self: flex-start;
-    align-self: center;
-    justify-content: center;
-    align-items: center;
-    padding: 0 10px;
-}
-.setting-icons{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-.setting-icon{
-    padding-right: 10px;
-}
-.game-area{
-    display: grid;
-    height: 100%;
-    grid-template-rows: 1fr 3fr 2fr;
-    align-items: center;
-    justify-content: center;
-    overflow: visible;
-}
-.timer{
-    display: flex;
-    height: 100%;
-    width: 100%;
-    justify-self: center;
-    align-self: center;
-    justify-content: center;
-    align-items: center;
-}
 .field{
     display: grid;
-    grid-template-columns: repeat(5, 40px);
-    grid-template-rows: repeat(6, 40px);
+    grid-template-columns: repeat(5, 35px);
+    grid-template-rows: repeat(6, 35px);
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -448,15 +90,17 @@
     height: 100%;
     border: #404040 solid 2px;
     border-radius: 5px;
-    font-size: 30px;
+    font-size: 27px;
     align-items: center;
     justify-content: center;
 }
 .keyboard{
     padding: 10px;
+    height: 100%;
+    max-height: 200px;
     display: grid;
     grid-template-columns: repeat(12, minmax(10px, 40px));
-    grid-template-rows: repeat(3, 50px);
+    grid-template-rows: repeat(3, 33%);
     column-gap: 4px;
     row-gap: 3px;
     align-items: center;
@@ -476,4 +120,7 @@
 .keyboard div:last-child{
     grid-row: 3/3;
     grid-column: 11/13;
+}
+#backspaceSVG{
+    max-width: 20px;
 }

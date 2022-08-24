@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import { useRouter } from 'next/router'
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -6,11 +7,14 @@ import Switch from '../../assets/Switch'
 import { getData, loadSwitcherData, setData, THEME_KEY, updateThemeData } from '../../data/localMemory'
 import { RootState } from '../../store'
 import { toggle } from '../../store/modalSlice'
+import style from './Modals.module.css'
 
 const SettingsModal = () => {
   const dispatch = useDispatch()
   const controllers = useSelector((state: RootState) => state.animations)
   const router = useRouter()
+  const {template, settings, header,
+     label, cross, content, grid, settings_content} = style
   useEffect(()=>{
     loadSwitcherData()
     setTimeout(()=>{
@@ -24,8 +28,6 @@ const SettingsModal = () => {
       dispatch(toggle('none'))
       console.log('before click')
     },800)
-    // if (router.pathname == '/game')
-    //   controllers.play()
   }
   const theme = (e: React.MouseEvent<HTMLDivElement>, theme: string) => {
     console.log(e.target)
@@ -45,16 +47,20 @@ const SettingsModal = () => {
   }
 
   return (
-    <div className='settings-modal'>
-      <div className='header-modal'>
-        <div className='label-modal'>Налаштування</div>
-        <div className='cross-modal' onClick={close}><Cross /></div>
+    <div className={classNames('border', template, settings)}>
+<div className={header}>
+        <div className={label}>Налаштування</div>
+        <div className={cross} onClick={close}><Cross /></div>
       </div>
-      <div className='settings-content-modal'>
-        <div className='text-modal'>Темна тема</div>
-        <div className='switch-modal is-inactiveSVG' id='dark' onClick={(e) => theme(e, 'dark')}><Switch /></div>
-        <div className='text-modal'>Режим дальтонізму</div>
-        <div className='switch-modal is-inactiveSVG' id='color-blindness' onClick={(e) => theme(e, 'color-blindness')}><Switch /></div>
+      <div className={classNames(content, settings_content)}>
+        <div className={grid}>
+         <div>Темна тема</div>
+         <div className='switch-modal is-inactiveSVG'   id='dark' onClick={(e) => theme(e, 'dark')}><Switch /></div>
+        </div>
+        <div className={grid}>
+         <div>Режим дальтонізму</div>
+         <div className='switch-modal is-inactiveSVG'  id='color-blindness' onClick={(e) => theme(e, 'color-blindness')}><Switch /></div>
+        </div>
       </div>
     </div>
   )

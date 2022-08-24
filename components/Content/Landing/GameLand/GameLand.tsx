@@ -11,7 +11,7 @@ const GameLand:FC<{startGame: ()=> void}> = ({startGame}) => {
   <div className='logo'>
     <LogoSVG />
   </div>
-  <div className='button' data-testid='button' onClick={startGame}>
+  <div className='border button' data-testid='button' onClick={startGame}>
   розпочати гру
 </div></>
   )

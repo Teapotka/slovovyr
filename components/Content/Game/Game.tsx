@@ -6,7 +6,7 @@ import TimerTemp from './Timer/TimerTemp'
 
 const Game = () => {
   return(
-    <div className='game-area'>
+    <div className='temp-l-template l-game-grid'>
       <TimerTemp/>
       <Field/>
       <Keyboard/>

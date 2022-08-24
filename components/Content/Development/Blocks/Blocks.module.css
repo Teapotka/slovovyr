@@ -1,0 +1,22 @@
+.block{
+    display: grid;
+    padding: 15px 0;
+    grid-row: 20% auto;
+    row-gap: 20px;
+    justify-content: center;
+    font-family: 'Source Code Pro';
+}
+.block:last-child{
+    margin-bottom: 20px;
+}
+.json{
+    padding: 15px;
+    display: flex;
+    width: 100%;
+    word-break: break-all;
+}
+.box{
+    display: grid;
+    row-gap: 20px;
+    padding: 10px 0;
+}

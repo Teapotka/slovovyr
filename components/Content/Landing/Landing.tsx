@@ -23,7 +23,7 @@ const Landing = () => {
       classNames={'content'}
       onEntered={() => {setchange(true)}}
     >
-      <div className='l-content'>
+      <div className='temp-l-template l-content'>
         {
           change ?   
           <GameStart navigate={(region: string)=>navigate(region)}/>

@@ -20,7 +20,7 @@ const handle = () =>{
 }
   return (
   <>
-    <div className={`temp-l-header-${type}`}>
+    <div className={`temp-l-template temp-l-header-${type}`}>
         <div className='temp-l-navigation'>
             {
             type == 'landing' ?

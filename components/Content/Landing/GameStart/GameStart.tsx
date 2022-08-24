@@ -18,7 +18,7 @@ const GameStart:FC<{navigate: (data: string)=> void}> = ({navigate}) => {
         </div>
         <div
         data-testid='button'
-        className={classNames('button', !Object.values(active).includes(true) && 'is-inactive')}
+        className={classNames('border button', !Object.values(active).includes(true) && 'is-inactive')}
         onClick={()=> Object.values(active).includes(true) && navigate(choise)}>
         {Object.values(active).includes(true) ? 'рушаймо !' : 'оберіть регіон'}
       </div></>

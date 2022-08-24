@@ -5,8 +5,8 @@ import TextBlock from './Blocks/TextBlock'
 
 const About = () => {
   return (
-    <div className='about-grid'>
-        <div className='block-header'>Про нас</div>
+    <div className='l-content-scroll l-about-grid'>
+        <div className='header-label'>Про нас</div>
         <TextBlock/>
         <PhotoBlock/>
         <LinkBlock/>

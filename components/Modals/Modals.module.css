@@ -1,0 +1,87 @@
+.template{
+    display: grid;
+    grid-template-rows: 20% 80%;
+    border-radius: 10px;
+    width: 250px;
+}
+.result{
+    height: 130px;
+}
+.win{
+    border-color: #02FF0C !important;
+}
+.lose{
+    border-color: #FD8383 !important;
+}
+.info{
+    grid-template-rows: 10% 90%;
+    height: 450px;
+}
+.settings{
+    height: 150px;
+}
+.header{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.label{
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: center;
+}
+.cross{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: flex-end;
+    align-self: flex-start;
+    width: 36px;
+    height: 36px;
+}
+.content{
+    display: grid;
+    grid-auto-rows: max-content;
+    row-gap: 15px;
+    align-self: center;
+}
+.settings_content{
+    row-gap: 25px;
+    padding: 0 0 0 10px;
+}
+.intro{
+    font-size: 9px;
+    text-align: center;
+}
+.field{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.field_item{
+    margin: 0 1.5px;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.row{
+    padding: 0 10px 8px 10px;
+    display: flex;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    align-items: center;
+}
+.comment{
+    margin-left: 5px;
+    font-size: 10px;
+}
+.center{
+    text-align: center;
+}

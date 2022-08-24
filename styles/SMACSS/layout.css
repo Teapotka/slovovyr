@@ -1,23 +1,109 @@
-.l-grid{ /* grid for content */
+.temp-l-template{
     display: grid;
+    width: 100%;
+    height: 100%;
+}
+.temp-l-grid{
     grid-template-rows: 50px calc(100vh - 50px);
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     overflow: hidden;
 }
-.l-header{ /* grid for header */
-    width: 100vw;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 70vw 30vw;
+.temp-l-header-landing{
+    grid-template-columns: minmax(150px, 300px) minmax(auto, 100vw);
+}
+.temp-l-header-game{
+    grid-template-columns: 25vw 50vw 25vw;
+}
+.temp-l-header-alternative{
+    grid-template-columns: 25vw 50vw 25vw;
 }
 .l-content{  /* grid for content */
-    display: grid;
-    height: 100%;
-    width: 100vw;
     grid-template-columns: 1fr;
     grid-template-rows: 50% 15% 25%;
-    /* align-items: center; */
     align-content: center;
     justify-content: center;
+}
+.l-content-scroll{  /* grid for content */
+    display: grid;
+    height: calc(100vh - 50px);
+    overflow: scroll;
+    grid-auto-rows: max-content;
+}
+.temp-l-navigation{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 20px;
+}
+.temp-l-icons{
+    display: flex;
+    justify-self: flex-end;
+    align-self: center;
+    padding: 0 10px;
+}
+.temp-l-icons div:nth-child(2){
+    margin-left: 10px;
+}
+.temp-l-logo{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    max-width: 150px;
+    justify-self: center;
+    align-self: center;
+}
+.l-about-grid{
+    padding: 0 10px 30px 10px;
+    justify-content: center;
+    row-gap: 40px;
+}
+.l-about-grid :nth-child(6){
+    justify-content: flex-end;
+}
+.l-about-grid :nth-child(8){
+    text-align: center;
+}
+.l-history-grid{
+    padding-top: 30px;
+    row-gap: 30px;
+}
+.l-development-grid{
+    width: 80vw;
+    max-width: 500px;
+    justify-self: center;
+    display: grid;
+    row-gap: 40px;
+    text-align: center;
+    justify-content: center;
+}
+.l-development-grid pre{
+    text-align: left;
+}
+.l-development-grid  a{
+    font-family: 'Source Code Pro';
+}
+.l-gap-grid{
+    display: grid;
+    row-gap: 30px;
+}
+.border{
+    border-radius: 5px;
+    border: #404040 1px solid;
+}
+.line{
+    background-color: #404040;
+    justify-self: center;
+    width: 80%;
+    height: 1px;
+}
+
+.l-game-grid{
+    grid-template-rows: 1fr 3fr 2fr;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
 }

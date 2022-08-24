@@ -10,7 +10,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
+    -webkit-tap-highlight-color: transparent;
+    
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -32,9 +33,6 @@ html{
 pre{
     font-family: 'Source Code Pro';
     font-size: 13px;
-    width: 80vw;
-    /* word-wrap: break-word; */
-    /* display: flex; */
     white-space: pre-wrap;       /* Since CSS 2.1 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
     white-space: -pre-wrap;      /* Opera 4-6 */

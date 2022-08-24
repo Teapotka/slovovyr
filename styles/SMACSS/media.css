@@ -1,32 +1,40 @@
 @media screen and (min-width: 320px) {
     @media screen and (min-height: 600px) {
+        .vyr{
+            max-width: 280px;
+        }
+        .logo{
+            max-width: 250px;
+        }        
+        .field{
+            grid-template-columns: repeat(5, 42px);
+            grid-template-rows: repeat(6, 42px);
+        }  
         .temp-timer svg{
             height: 50px;
         }
         #timer{
             stroke-width: 3px;
         }
-        
     }
-     @media screen and (min-height: 700px) {
-         .l-content{
-             grid-template-rows: 40% 15% 20%;
-            }
+    @media screen and (min-height: 700px) {
+        .l-content{
+            grid-template-rows: 40% 15% 20%;
+        }
         .content-enter-done{
             grid-template-rows: 20% 40% 25% !important;            
-        }      
+        } 
         .field{
             grid-template-columns: repeat(5, 45px);
             grid-template-rows: repeat(6, 45px);
+        }  
+        .field-item{
+            font-size: 30px;
         }
     }
-    
     @media screen and (min-height: 900px) {
         .l-content{
             grid-template-rows: 40% 15% 10%;
-        }
-        .timer svg{
-            height: 60px;
         }
         .content-enter-done{
             grid-template-rows: 20% 30% 25% !important;            
@@ -34,108 +42,84 @@
         .field{
             grid-template-columns: repeat(5, 50px);
             grid-template-rows: repeat(6, 50px);
+        } 
+        .field-item{
+            font-size: 35px;
         }
+        .temp-timer svg{
+            height: 60px;
+        }
+   
     }
 }
 @media screen and (min-width: 375px){
-    .modal .win-modal,
-    .modal .lose-modal,
-    .modal .info-modal,
-    .modal .settings-modal
-    {
-        transform: scale(1.2);
-    }
-    .keyboard{
-        /* grid-template-columns: repeat(12, 26px); */
-        grid-template-rows: repeat(3, 55px);
-    }
     @media screen and (min-height: 600px){
         .field{
             grid-template-columns: repeat(5, 45px);
             grid-template-rows: repeat(6, 45px);
         }  
+        .modal > div
+        {
+            transform: scale(1.2);
+        }
     }
     @media screen and (min-height: 700px) {
-        .l-content{
-            grid-template-rows: 45% 15% 20%;
-           }
-       .content-enter-done{
-           grid-template-rows: 20% 40% 25% !important;            
-       }   
-       .field{
-        grid-template-columns: repeat(5, 50px);
-        grid-template-rows: repeat(6, 50px);
-    }   
-   }
-   @media screen and (min-height: 900px) {
-    .l-content{
-        grid-template-rows: 40% 15% 10%;
+        .field{
+            grid-template-columns: repeat(5, 50px);
+            grid-template-rows: repeat(6, 50px);
+        }   
+        .logo{
+            max-width: 270px;
+        }
     }
-    .content-enter-done{
-        grid-template-rows: 20% 30% 25% !important;            
+    @media screen and (min-height: 800px) {
+        .field{
+            grid-template-columns: repeat(5, 52px);
+            grid-template-rows: repeat(6, 52px);
+        }
     }
-    .field{
-        grid-template-columns: repeat(5, 55px);
-        grid-template-rows: repeat(6, 55px);
+    @media screen and (min-height: 900px) {
+        .field{
+            grid-template-columns: repeat(5, 55px);
+            grid-template-rows: repeat(6, 55px);
+        }
     }
-}
-   
 }
 @media screen and (min-width: 425px){
     .button{
         width: 300px;
-    height: 90px;
-    font-size: 35px;
+        height: 90px;
+        font-size: 35px;
     }
-    .history-item{
+    .l-history-grid,
+    .l-development-grid,
+    .l-about-grid
+    {
         font-size: 18px;
-    }
-    .keyboard{
-        /* grid-template-columns: repeat(12, 30px); */
-        grid-template-rows: repeat(3, 56px);
     }
     .keyboard-item{
         font-size: 20px;
-    }
-    .block-container{
-        font-size: 18px;
     }
     @media screen and (min-height: 700px) {
         .field-item{
             font-size: 35px;
         }
     }
+    @media screen and (min-height: 900px) {
+        .field-item{
+            font-size: 37px;
+        }
+    }
 }
 @media screen and (min-width: 500px){
-    .modal .win-modal,
-    .modal .lose-modal,
-    .modal .info-modal,
-    .modal .settings-modal
+    .l-history-grid,
+    .l-development-grid,
+    .l-about-grid
     {
-        transform: scale(1.4);
+        font-size: 20px;
     }
-    .content-enter-done {
-        grid-template-rows: 20% 55% 25% !important;
-    }
-    .intro-modal{
-        font-size: 11px;
-    }
-    .keyboard{
-        /* grid-template-columns: repeat(12, 35px); */
-        grid-template-rows: repeat(3, 50px);
-    }
-    /* .l-header{
-        grid-template-columns: 50vw 50vw;
-        height: 70px;
-    }
-    .l-grid{
-        grid-template-rows: 70px calc(100vh - 70px);
-    } */
     .temp-l-navigation{
         font-size: 22px;
-    }
-    .about-grid{
-        font-size: 20px;
     }
     #settingsSVG{
         width: 30px;
@@ -149,18 +133,21 @@
         width: 30px;
         height: 30px;
     }
-    /* .is-small{
-        transform: scale(1.3);
-    } */
+    @media screen and (min-height: 700px) {
+        .modal > div
+        {
+            transform: scale(1.4);
+        }
+    }
 }
 @media screen and (min-width: 1000px){
+    .l-history-grid,
+    .l-development-grid,
+    .l-about-grid
+    {
+        font-size: 22px;
+    }
     .temp-l-navigation{
-        font-size: 27px;
-    }
-    .history-row{
-        font-size: 22px;
-    }
-    .block-api{
-        font-size: 22px;
+        font-size: 25px;
     }
 }

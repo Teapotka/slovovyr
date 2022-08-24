@@ -1,93 +1,24 @@
-/* global rules */
 .dark{
     background-color: #404040;
     color: #ffffff;
 }
-/* elemets with stroke and fill */
-.dark .logo path,
-.dark .vyr path{
-    stroke: #ffffff;
+.dark #vyrSVG path,
+.dark #logoSVG path,
+.dark #settingsSVG path,
+.dark #enterSVG path,
+.dark #backspaceSVG path
+{
     fill: #ffffff;
 }
-/* elemets with fill */
-.dark .icon path{
-    fill: #ffffff;
-}
-/* elemets with border */
-.dark .button{
-    border-color: #ffffff;
-}
-.dark .map path{
-    stroke: #ffffff;
-}
-.dark #settingsSVG path{
-    fill: #ffffff;
-}
-.dark #logoSVG path{
-    stroke: #ffffff;
-    fill: #ffffff;
-}
-.dark #infoSVG *{
-stroke: #ffffff;
-}
-.dark #arrowSVG *{
-stroke: #ffffff;
-}
-.dark .back-arrow path{
-    stroke: #ffffff;
-}
-.dark .keyboard-item{
-    border-color: #ffffff;
-}
-.dark .field-item{
-    border-color: #ffffff;
-}
-.dark .field-item-modal{
-    border-color: #ffffff;
-}
-.dark #enterSVG path{
-    fill: #ffffff;
-}
-.dark #backspaceSVG path{
-    fill: #ffffff;
-}
-.dark .modal{
-    background-color: rgba(64, 64, 64 , 0.9);
-}
-.dark .settings-modal{
-    border-color: #ffffff;
-}
-.dark .info-modal{
-    border-color: #ffffff;
-}
-.dark .switch-modal * {
-    stroke: #ffffff;
-}
-.dark #timer{
-    stroke: #ffffff;
-}
-.dark #crossSVG path{
-    stroke: #ffffff;
-}
-.dark a {
-    color: #ffffff;
-}
-.dark .horizontal-line {
-    background-color: #ffffff;
-}
-.dark .horizontal-line-alt {
-    background-color: #ffffff;
-}
-.dark .block-content {
-    border-color: #ffffff;
-}
-.dark #linkSVG path{
-    stroke: #ffffff;
-}
-.dark #yesSVG path{
-    stroke: #ffffff;
-}
-.dark #noSVG path{
+.dark #arrowSVG path,
+.dark #yesSVG path,
+.dark #noSVG path,
+.dark #linkSVG path,
+.dark #crossSVG path,
+.dark #infoSVG *,
+.dark #timer,
+.dark .map path
+{
     stroke: #ffffff;
 }
 .dark #mark-center,
@@ -102,6 +33,27 @@ stroke: #ffffff;
 {
     stroke: #FF0000;
 }
+.dark .border
+{
+    border-color: #ffffff;
+}
+.dark a {
+    color: #ffffff;
+}
+.dark .line {
+    background-color: #ffffff;
+}
+.dark .modal{
+    background-color: rgba(64, 64, 64 , 0.9);
+}
+.dark .switch-modal * {
+    stroke: #ffffff;
+}
+.dark .field-item,
+.dark .keyboard-item
+{
+    border-color: #ffffff;
+}
 .dark .is-inactiveSVG{stroke: #808080;}
 .dark .is-chosen{fill: #ffffff;}
 .dark .is-not-chosen{fill: #404040;}
@@ -109,4 +61,4 @@ stroke: #ffffff;
 .dark .is-right{border-color: #02FF0C ;}
 .dark .is-semiright{border-color: #FFD600;}
 .color-blindness .is-right{border-color: #0057b8 ;}
-.color-blindness .is-semiright{border-color:  #ffd700;}
+.color-blindness .is-semiright{border-color:  #ffd700;} 

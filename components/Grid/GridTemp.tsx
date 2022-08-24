@@ -8,7 +8,7 @@ const GridTemp:FC<{children: ReactNode[], state : string}> = ({children, state})
     },[])
     return (
       <>
-      <div className={`temp-l-grid ${state}`}>        
+      <div className={`temp-l-template temp-l-grid ${state}`}>        
       {children}
       </div>
       <ModalContainer/>

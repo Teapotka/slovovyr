@@ -4,9 +4,9 @@ import ExBlock from './Blocks/ExBlock'
 
 const Development = () => {
   return (
-    <div className='block-container'>
+    <div className='l-content-scroll l-development-grid'>
     <ApiBlock/>
-    <div className='horizontal-line'></div>
+    <div className='line'></div>
     <ExBlock/>
     </div>
   )

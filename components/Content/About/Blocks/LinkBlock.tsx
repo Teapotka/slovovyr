@@ -2,7 +2,7 @@ import React from 'react'
 
 const LinkBlock = () => {
     return (
-        <div className='links-block'>
+        <div>
             Джерела:
             <ul>
             <li><a href='http://irbis-nbuv.gov.ua/cgi-bin/ua/elib.exe?Z21ID=&I21DBN=UKRLIB&P21DBN=UKRLIB&S21STN=1&S21REF=10&S21FMT=online_book&C21COM=S&S21CNR=20&S21P01=0&S21P02=0&S21P03=FF=&S21STR=ukr0001576'>Словник польських говорів</a></li>

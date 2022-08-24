@@ -1,0 +1,26 @@
+.text{
+    text-align: center;
+    max-width: 500px;
+}
+.photo{
+    display: flex;
+    align-items: center;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 10px;
+}
+.desc:first-child{
+    text-align: right;
+}
+
+.thumbnail{
+    object-fit: contain;
+    width: 30%;
+    max-width: 200px;
+    height: auto;
+    clip-path: circle();
+}

@@ -13,7 +13,6 @@ const calculate = () =>{
   console.log('CALC',value)
   return value
 }
-//FIXME: modal anim
 const ModalContainer = () => {  
     const modal = useSelector((state:RootState)=> state.modals.modal)
     console.log(modal)
@@ -26,14 +25,9 @@ const ModalContainer = () => {
     }
   return (
     <>
-    {/* <CSSTransition
-    in={modal != 'none'}
-    timeout={0}
-    classNames={'modal'}> */}
         <div className={classNames('modal', modal == 'none' && 'is-hidden')}>
         {modals[modal]}
         </div>
-    {/* </CSSTransition> */}
     </>
   )
 }
