@@ -115,3 +115,4 @@ export default
         ]
     },
 ];
+export const time = new Date().getDate() - 1
