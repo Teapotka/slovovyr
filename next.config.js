@@ -1,5 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  headers:[
+    {
+      key: 'X-Robots-Tag',
+      value: 'index,follow',
+    },
+  ],
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
