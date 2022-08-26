@@ -10,7 +10,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   //style optimization, testing, toolbar problem fix
   return <>
   <DefaultSeo {...Seo} additionalMetaTags={[
-    {name: 'keywords', content: index}
+    {name: 'keywords', content: index},
+    {name:"google-site-verification", content:"1XI69fLsfqtPUBohrHIAHvqozgcovMJ3VKNh5XkV11Q"}
   ]}/>
   <Provider store={store}>
     <Component {...pageProps} />
