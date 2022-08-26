@@ -5,6 +5,7 @@ import React, { FC, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import Cross from '../../assets/Cross'
 import { CHOISE_KEY, getData, readAllData, recordData } from '../../data/localMemory'
+import { getWord } from '../../data/words'
 import { RootState } from '../../store'
 import { toggle } from '../../store/modalSlice'
 import style from './Modals.module.css'
@@ -18,8 +19,8 @@ const WinModal:FC<{calculate: ()=>number}> = ({calculate}) => {
         label, cross, content, center, win} = style
 
 
-    axios.post(`${process.env.SECRET_API_KEY}`,{ region: getData(CHOISE_KEY) })
-    .then((d)=>setword({...word, word: d.data.word, meaning: d.data.meaning}))
+    // axios.post(`${process.env.SECRET_API_KEY}`,{ region: getData(CHOISE_KEY) })
+    // .then((d)=>setword({...word, word: d.data.word, meaning: d.data.meaning}))
 
     useEffect(() => {
         // document.getElementById('logo')!.click()
@@ -47,8 +48,8 @@ const WinModal:FC<{calculate: ()=>number}> = ({calculate}) => {
              <div className={cross} onClick={close}><Cross /></div>
          </div>
          <div className={classNames(content,center)}>
-             <div>Шукане слово - {word.word}</div>
-             <div>Значення - {word.meaning}</div>
+         <div>Шукане слово - {getWord(getData(CHOISE_KEY)).word}</div>
+            <div>Значення - {getWord(getData(CHOISE_KEY)).meaning}</div>
          </div>
      </div>
     )

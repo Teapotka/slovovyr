@@ -6,6 +6,7 @@ import GridTemp from '../components/Grid/GridTemp'
 import HeaderTemp from '../components/Header/HeaderTemp'
 import { CHOISE_KEY, getData, readAllData } from '../data/localMemory'
 import { store } from '../store'
+import { NextSeo } from 'next-seo'
 
 const game = () => {
   const router = useRouter()
@@ -15,10 +16,13 @@ const game = () => {
     readAllData().data.length == 0 && document.querySelector('.temp-l-icons .temp-center-box').click()
   })
     return (
+      <>
+      <NextSeo noindex nofollow/>
       <GridTemp state='is-scrolless'>
          <HeaderTemp type='game'/>
          <Game/>
     </GridTemp>
+      </>
   )
 }
 

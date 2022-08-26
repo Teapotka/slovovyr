@@ -1,5 +1,6 @@
 import axios from "axios"
 import { CHOISE_KEY, getData } from "../../../../data/localMemory"
+import { getWord } from "../../../../data/words"
 
 export default async function Enter(func: Function) {
     const items = document.querySelectorAll('.field-item')
@@ -16,6 +17,49 @@ export default async function Enter(func: Function) {
             value.classList.add('is-fetching')
         })
         console.log(CHOISE_KEY)
+
+        const answer = getWord(getData(CHOISE_KEY)).word 
+        console.log(answer)
+        if(end){
+            console.log('GAME END')
+            filtered.forEach((value) => {
+                value.classList.remove('is-fetching')
+            })
+            validate(word, answer, filtered)
+            answer == word ? result = true : result = false
+            func(result)
+            return null
+        }
+        if (answer == word) {
+            console.log('GAME MATCH')
+            filtered.forEach((value) => {
+                value.classList.remove('is-fetching')
+            })
+            validate(word, answer, filtered)
+            result = true
+            func(result)
+            return null
+        }
+        else {
+            console.log('GAME NOT MATCH')
+            axios.get(`${process.env.API_KEY}` + word)
+                .then(d => {
+                    filtered.forEach((value) => {
+                        value.classList.remove('is-fetching')
+                    })
+                    if (d.data.existing) {
+                        console.log(': EXIST')
+                        validate(word, answer, filtered)
+                    }
+                    else {
+                        console.log(': NOT EXIST')
+                        for (let i = 0; i < 5; i++) {
+                            filtered[i].innerHTML = ''
+                        }
+                    }
+                })
+        }
+        /*
         axios.post(`${process.env.SECRET_API_KEY}`, { region: getData(CHOISE_KEY) })
             .then((d) => {
                 let answer = d.data.word
@@ -60,7 +104,7 @@ export default async function Enter(func: Function) {
             }).then(()=>{
                 result != null && func(result)
             })
-
+            */           
     }
 }
 function colorKeys(keys: string, colors: string[]) {

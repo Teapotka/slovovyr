@@ -24,18 +24,18 @@ useEffect(()=>{
                   'ґ','я','ч','с','м','и','т','ь','б','ю', <Enter/>]
                   //TODO: Animejs, Cashe, Data storage
                   useEffect(()=>{
-                    window.addEventListener('keyup', (e)=>{
+                    window.onkeyup = (e) => {
                       if(e.key.length > 1){
-                        //@ts-ignore
-                        document.getElementById(e.key.toLowerCase()+'SVG')?.parentElement.click()
-                      }
-                      else{
-                        document.getElementById(e.key)?.click()
-                      }
-
-                      console.log(e)
-                    })
-                  })
+                            //@ts-ignore
+                            document.getElementById(e.key.toLowerCase()+'SVG')?.parentElement.click()
+                          }
+                          else{
+                            document.getElementById(e.key)?.click()
+                          }
+    
+                          console.log(e)
+                    }
+                  },[])
   const handle = (e:React.MouseEvent<HTMLDivElement>) =>{
     const selector = e.currentTarget
     if(selector.children.length){
