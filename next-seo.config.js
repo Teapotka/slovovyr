@@ -8,7 +8,7 @@ export default {
       locale: 'uk_UA',
       url: 'https://slovovyr.vercel.app/',
       site_name: 'Слововир',
-      image: '/logo.png'
+      image: 'https://slovovyr.vercel.app/logo.png'
     },
     twitter: {
       cardType: 'summary_large_image',
