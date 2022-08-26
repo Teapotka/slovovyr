@@ -11,8 +11,8 @@ export default {
       images: [
         {
           url: 'https://slovovyr.vercel.app/static/logo.png',
-          width: 1200,
-          height: 627,
+          width: 800,
+          height: 600,
           alt: 'Og Image Alt',
         },
       ]
