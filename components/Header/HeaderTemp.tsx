@@ -20,8 +20,8 @@ const handle = () =>{
 }
   return (
   <>
-    <div className={`temp-l-template temp-l-header-${type}`}>
-        <div className='temp-l-navigation'>
+    <div data-testid='header' className={`temp-l-template temp-l-header-${type}`}>
+        <div className='temp-l-navigation' data-testid='temp-l-navigation'>
             {
             type == 'landing' ?
             <>
@@ -41,7 +41,7 @@ const handle = () =>{
                 <Logo/>
             </div>
         }
-        <div className='temp-l-icons'>
+        <div className='temp-l-icons' data-testid='temp-l-icons'>
             {
                 type == 'game' ?
                 <>

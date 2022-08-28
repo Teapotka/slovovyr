@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return <>
   <DefaultSeo {...Seo} additionalMetaTags={[
     {name: 'keywords', content: index},
-    {name:"google-site-verification", content:"1XI69fLsfqtPUBohrHIAHvqozgcovMJ3VKNh5XkV11Q"}
+    {name:"google-site-verification", content:"NQ0KmnOqaEZYlzTHHCv6jlOsIXAMBxPLN7XjlGCLNjQ"}
   ]}/>
   <Provider store={store}>
     <Component {...pageProps} />

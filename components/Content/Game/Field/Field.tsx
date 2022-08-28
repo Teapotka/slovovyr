@@ -8,7 +8,7 @@ const Field = () => {
     console.log(grid)
     return (
         <>
-            <div className='field'>
+            <div data-testid='field' className='field'>
                 {grid}
             </div>
         </>

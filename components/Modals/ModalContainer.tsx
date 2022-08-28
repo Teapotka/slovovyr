@@ -25,7 +25,7 @@ const ModalContainer = () => {
     }
   return (
     <>
-        <div className={classNames('modal', modal == 'none' && 'is-hidden')}>
+        <div data-testid='modal' className={classNames('modal', modal == 'none' && 'is-hidden')}>
         {modals[modal]}
         </div>
     </>
