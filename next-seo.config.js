@@ -6,11 +6,11 @@ export default {
       description: 'Українська онлайн-гра для збагачення лексикону споконвічними словами',
       type: 'website',
       locale: 'uk_UA',
-      url: 'https://slovovyr.vercel.app/',
+      url: 'https://slovovyr.pp.ua/',
       site_name: 'Слововир',
       images: [
         {
-          url: 'https://slovovyr.vercel.app/static/logo.png',
+          url: 'https://slovovyr.pp.ua/static/logo.png',
           width: 800,
           height: 600,
           alt: 'Og Image Alt',
@@ -21,6 +21,6 @@ export default {
       cardType: 'summary_large_image',
       title: 'Слововир',
       description: 'Українська онлайн-гра для збагачення лексикону споконвічними словами',
-      image: '/static/favicon.ico'
+      image: '/static/logo.png'
     },
   };
