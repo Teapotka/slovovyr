@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /game
-Sitemap: https://slovovyr.pp.ua/sitemap.xml
+Sitemap: https://slovovyr.pp.ua/sitemap-index.xml
