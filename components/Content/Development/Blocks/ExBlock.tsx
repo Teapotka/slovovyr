@@ -56,8 +56,8 @@ const ExBlock = () => {
                 </div>
             </div>
             <div className={box}>
-                <div>https://slovovyr.vercel.com/api/ваше_слово/індекс</div>
-                <div onClick={() => navigator.clipboard.writeText('https://slovovyr.vercel.com/api/ваше_слово/індекс')}><Link /></div>
+                <div>https://slovovyr.pp.ua/api/ваше_слово/індекс</div>
+                <div onClick={() => navigator.clipboard.writeText('https://slovovyr.pp.ua/api/ваше_слово/індекс')}><Link /></div>
             </div>
             <div className={classNames('border', block)}>
                 <a href={links[2]}>{links[2]}</a>
