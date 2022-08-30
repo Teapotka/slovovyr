@@ -19,11 +19,11 @@
     align-self: center;
     width: 100%;
 }
-/*.is-scrolless{*/
-/*    grid-template-rows: 50px calc(100vh - 100px);*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*}*/
+.is-scrolless{
+    grid-template-rows: 50px calc(100vh - 110px);
+    width: 100%;
+    height: 100%;
+}
 .is-mini{
     width: 22px !important;
     height: 22px !important;
