@@ -1,0 +1,40 @@
+.vyrSVG-box svg g
+  transform-origin: center
+
+.vyrSVG-box svg g:nth-child(1)
+  animation: spinCW 20s infinite linear
+
+.vyrSVG-box svg g:nth-child(2)
+  animation: spinCW 17s infinite linear
+
+.vyrSVG-box svg g:nth-child(3)
+  animation: spinCW 14s infinite linear
+
+.vyrSVG-box svg g:nth-child(4)
+  animation: spinCW 11s infinite linear
+
+.vyrSVG-box svg g:nth-child(5)
+  animation: spinCW 8s infinite linear
+
+.is-appearedModal
+  animation: appear 0.8s forwards
+
+.is-disappearedModal
+  animation: disappear 0.8s forwards
+
+@keyframes spinCW
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(360deg)
+
+@keyframes appear
+  from
+    opacity: 0
+  to
+    opacity: 1
+@keyframes disappear
+  from
+    opacity: 1
+  to
+    opacity: 0

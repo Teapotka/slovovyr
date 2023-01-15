@@ -1,0 +1,7 @@
+/* TEAM */
+	Full stack (with an emphasis on frontend) developer: Tymofii Sukhariev
+	LinkedIn: https://www.linkedin.com/in/tymofii-sukhariev-9630a2244/
+	GitHub: https://github.com/Teapotka
+
+	UI/UX designer: Vladyslav Todorchuk 
+	Behance: https://www.behance.net/vladtodorchuk

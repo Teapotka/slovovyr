@@ -1,0 +1,35 @@
+$animation-time: 1s
+
+.is-hiddenLayout
+  transition: all $animation-time
+  transform: scale(0)
+  opacity: 0
+
+.is-visibleLayout
+  transition: all $animation-time
+  transform: scale(1)
+  opacity: 1
+
+.is-hiddenModal
+  display: none
+
+.is-chosenRegion
+  fill: #404040
+
+.is-inactive
+  border-color: #808080 !important
+  color: #808080 !important
+
+.is-inactiveSVG svg *
+  stroke: #808080 !important
+
+.is-fetching
+  border-color: #808080 !important
+  color: #808080 !important
+
+.is-wrong
+  border-color: #808080 !important
+.is-right
+  border-color: #02FF0C
+.is-semiright
+  border-color: #FFD600

@@ -1,0 +1,72 @@
+$main-color: #404040
+$alt-color: #ffffff
+$semi-color: #ffd700
+$right-color: #0057b8
+.dark
+  background-color: $main-color
+  color: $alt-color
+
+  div,
+  li,
+  a
+    color: $alt-color
+
+  mark,
+  mark a
+    color: $main-color
+
+  #backspaceSVG path,
+  #enterSVG path,
+  #logoSVG path,
+  #settingsSVG path,
+  #vyrSVG path
+    fill: $alt-color
+
+  #arrowSVG path,
+  #crossSVG path,
+  #infoSVG *,
+  #linkSVG path,
+  #noSVG path,
+  #switchSVG *,
+  #timer,
+  #yesSVG path
+    stroke: $alt-color
+
+  #eastSVG,
+  #centerSVG,
+  #westSVG
+    stroke: $alt-color
+    fill: $main-color
+
+  .border,
+  .keyboard-item,
+  .field-item,
+  .l-modal-grid
+    border-color: $alt-color
+
+  .line
+    background-color: $alt-color
+
+  .l-content-scroll
+    &:before
+      background: linear-gradient(to top, $main-color, transparent)
+    &:after
+      background: linear-gradient(to top, transparent, $main-color)
+
+  .modal-info-box
+    &:before
+      background: linear-gradient(to top, $main-color, transparent)
+    &:after
+      background: linear-gradient(to top, transparent, $main-color)
+
+  .l-modal
+    background-color: rgba(64, 64, 64 , 0.9)
+
+  .is-chosenRegion
+    fill: $alt-color !important
+
+.colorBlind
+  .is-semiright
+    border-color: $semi-color
+  .is-right
+    border-color: $right-color
