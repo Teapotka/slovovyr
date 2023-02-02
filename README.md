@@ -1,7 +1,7 @@
 [:ukraine:](#link-ua)
 [:us:](#link-us)
 
-# <a name="link-ua">СЛОВОВИР</a> (Альфа-версія) :milky_way:
+# <a name="link-ua">СЛОВОВИР</a> (Реліз) :milky_way:
 ### Мова завжди на часі.
 
 Оскільки наразі мовне питання постало досить гостро, ми вирішили створити онлайн застосунок, щоб збагатити лексикон українців споконвічними словами з різних регіонів України.
@@ -40,7 +40,7 @@
 Сухарєв Тимофій - Full stack (Frontend) розробник ([LinkedIn](https://www.linkedin.com/in/tymofii-sukhariev-9630a2244/), [GitHub](https://github.com/Teapotka)) <br/>
 Тодорчук Владислав - UI/UX розробник ([Behance](https://www.behance.net/vladtodorchuk))
 
-# <a name="link-us">SLOVOVYR</a> (Alpha version) :milky_way:
+# <a name="link-us">SLOVOVYR</a> (Release) :milky_way:
 
 ### Language is always relevant.
 
