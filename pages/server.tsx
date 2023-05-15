@@ -33,14 +33,14 @@ export default function Server() {
                         text='Апі'
                         className='header-text'/>
                     <TextBlock
-                        text={<>Це апі використовує сайт <mark><a href="https://slovnyk.ua/">slovnyk.ua</a></mark> як джерело інформації. За допомогою бібліотеки <mark><a href="https://axios-http.com/">Axios</a></mark> виконується крос-домений запит, результат якого парситься завдяки <mark><a href="https://cheerio.js.org/">Cheerio</a></mark></>}
+                        text={<>Це апі використовує сайт <mark><a href="https://559.slovaronline.com/">559.slovaronline.com</a></mark> як джерело інформації. За допомогою бібліотеки <mark><a href="https://axios-http.com/">Axios</a></mark> виконується крос-домений запит, результат якого парситься завдяки <mark><a href="https://cheerio.js.org/">Cheerio</a></mark></>}
                         className='text-center'/>
                     <TextBlock
                         text={`${BASE_URL}/api/v1/ваше_слово`}
                         className='text-center'/>
                     <Link className={'flex-center'}
                           onClick={()=>navigator.clipboard
-                              .writeText('https://slovovyr.pp.ua/api/ваше_слово')}/>
+                              .writeText('https://slovovyr.pp.ua/api/v1/ваше_слово')}/>
                     <TextBlock
                         text={<>У відповідь ви отримаєте JSON у якому наявні такі поля, як:<br/><br/><mark>count</mark> - кількість визначень<br/><br/><mark>index</mark> - індекс визначення<br/><br/><mark>info</mark> - визначення</>}
                         className='text-center'/>
@@ -52,7 +52,7 @@ export default function Server() {
                         className='text-center'/>
                     <Link className={'flex-center padding-b-40'}
                           onClick={()=>navigator.clipboard
-                              .writeText('https://slovovyr.pp.ua/api/ваше_слово/ваш_індекс')}/>
+                              .writeText('https://slovovyr.pp.ua/api/v1/ваше_слово/ваш_індекс')}/>
                     </ContentComponent>
                 }
         />
